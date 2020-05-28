@@ -87,10 +87,16 @@ def get_loader(transform,
                                                                               batch_size=dataset.batch_size,
                                                                               drop_last=False))
     elif mode == 'val':
-        data_loader = data.DataLoader(dataset=dataset,
-                                      batch_size=dataset.batch_size,
-                                      shuffle=True,
-                                      num_workers=num_workers)
+        # Randomly sample a caption length, and sample indices with that length.
+        indices = dataset.get_train_indices()
+        # Create and assign a batch sampler to retrieve a batch with the sampled indices.
+        initial_sampler = data.sampler.SubsetRandomSampler(indices=indices)
+        # data loader for COCO dataset.
+        data_loader = data.DataLoader(dataset=dataset, 
+                                      num_workers=num_workers,
+                                      batch_sampler=data.sampler.BatchSampler(sampler=initial_sampler,
+                                                                              batch_size=dataset.batch_size,
+                                                                              drop_last=False))
     else:
         data_loader = data.DataLoader(dataset=dataset,
                                       batch_size=dataset.batch_size,
@@ -110,7 +116,7 @@ class CoCoDataset(data.Dataset):
         self.vocab = Vocabulary(vocab_threshold, vocab_file, start_word, end_word, unk_word, annotations_file, vocab_from_file)
         
         self.img_folder = img_folder
-        if self.mode == 'train':
+        if self.mode == 'train' or self.mode == 'val':
             self.coco = COCO(annotations_file)
             self.ids = list(self.coco.anns.keys())
             print('Obtaining caption lengths...')
