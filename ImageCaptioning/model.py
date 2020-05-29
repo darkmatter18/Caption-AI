@@ -2,7 +2,8 @@ import torch
 import torch.nn as nn
 import torchvision.models as models
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cpu")
 
 class EncoderCNN(nn.Module):
     def __init__(self, embed_size):
@@ -53,10 +54,10 @@ class DecoderRNN(nn.Module):
         return (torch.zeros(self.num_layers, batch_size, self.hidden_size, device = device),
                 torch.zeros(self.num_layers, batch_size, self.hidden_size, device = device))
     
-    def forward(self, features, captions):
+    def forward(self, features, captions, hidden):
         
         # Initialize the hidden state
-        self.hidden = self.init_hidden(features.shape[0])# features is of shape (batch_size, embed_size)
+        #self.hidden = self.init_hidden(features.shape[0])# features is of shape (batch_size, embed_size)
         
         
         # Embedding the captions
@@ -68,11 +69,11 @@ class DecoderRNN(nn.Module):
         # print(embedded.shape)
         
         # LSTM
-        lstm_out, self.hidden = self.lstm(embedded, self.hidden)
+        lstm_out, hidden = self.lstm(embedded, hidden)
         
         # Functional component
         out = self.fc(lstm_out)
-        return out
+        return out, hidden
 
     def sample(self, inputs, states=None, max_len=20):
         " accepts pre-processed image tensor (inputs) and returns predicted sentence (list of tensor ids of length max_len) "
