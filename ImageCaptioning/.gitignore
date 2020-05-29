@@ -1,3 +1,6 @@
 /COCODataset
 /.ipynb_checkpoints
 /__pycache__
+decoder.pt
+encoder.pt
+/models
