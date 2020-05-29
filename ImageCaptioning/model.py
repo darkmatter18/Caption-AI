@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 import torchvision.models as models
 
-# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-device = torch.device("cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+# device = torch.device("cpu")
 
 class EncoderCNN(nn.Module):
     def __init__(self, embed_size):
@@ -61,12 +61,12 @@ class DecoderRNN(nn.Module):
         
         
         # Embedding the captions
-        embedded = self.embed(captions[:,:-1])
+        embedded = self.embed(captions)
         # print(embedded.shape)
         # print(features.unsqueeze(1).shape)
-        
-        embedded = torch.cat((features.unsqueeze(1), embedded), dim=1)
         # print(embedded.shape)
+        embedded = torch.cat((features.unsqueeze(1), embedded), dim=1)
+
         
         # LSTM
         lstm_out, hidden = self.lstm(embedded, hidden)
@@ -88,9 +88,9 @@ class DecoderRNN(nn.Module):
             while word_len < max_len:
                 lstm_out, hidden = self.lstm(inputs, hidden)
                 out = self.fc(lstm_out)
+                #print(out.shape)
                 out = out.squeeze(1)
                 out = out.argmax(dim=1)
-                # print(out)
                 out_list.append(out.item())
                 
                 inputs = self.embed(out.unsqueeze(0))
