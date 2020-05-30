@@ -3,5 +3,5 @@ env: flex
 
 resources:
   cpu: 1
-  memory_gb: 6
+  memory_gb: 4
   disk_size_gb: 50
