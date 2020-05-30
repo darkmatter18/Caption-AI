@@ -14,9 +14,7 @@ class Captioner:
 
         # Set Vocab
         with open(os.path.join(utils_dir, 'vocab.pkl'), 'rb') as f:
-            vocab = pickle.load(f)
-            self.word2idx = vocab.word2idx
-            self.idx2word = vocab.idx2word
+            self.word2idx, self.idx2word = pickle.load(f)
 
         # Model Hyper parameters
         self.device = torch.device("cpu")
@@ -77,7 +75,7 @@ class Captioner:
 
         with torch.no_grad():
             while word_len < max_len:
-                out, features, hidden = decoder_jit(features, hidden)
+                out, features, hidden = self.decoder(features, hidden)
                 word_list.append(out.item())
                 word_len += 1
 
