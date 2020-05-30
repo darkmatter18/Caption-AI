@@ -1,6 +1,9 @@
 from starlette.applications import Starlette
 from starlette.routing import Route
 from starlette.responses import PlainTextResponse, HTMLResponse
+from io import BytesIO
+from PIL import Image
+import Captioner
 
 
 def homepage(request):
@@ -19,11 +22,14 @@ async def analyser(request):
     _f = await request.form()
     _filename = _f['file'].filename
     _fileData = await _f['file'].read()
+    imagebytes = BytesIO(_fileData)
+    pil_image = Image.open(imagebytes)
+    app.state.CAPTIONER.result()
     return PlainTextResponse(f"Got it {_filename}")
 
 
 def startup():
-    print("Engine Started")
+    app.state.CAPTIONER = Captioner.Captioner()
 
 
 app = Starlette(debug=True, on_startup=[startup], routes=[
