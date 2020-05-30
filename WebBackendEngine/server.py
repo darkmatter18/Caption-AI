@@ -22,9 +22,8 @@ async def analyser(request):
     _f = await request.form()
     _filename = _f['file'].filename
     _fileData = await _f['file'].read()
-    imagebytes = BytesIO(_fileData)
-    pil_image = Image.open(imagebytes)
-    app.state.CAPTIONER.result()
+    image_bytes = BytesIO(_fileData)
+    app.state.CAPTIONER.result(Image.open(image_bytes))
     return PlainTextResponse(f"Got it {_filename}")
 
 
