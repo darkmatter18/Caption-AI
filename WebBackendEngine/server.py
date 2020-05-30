@@ -1,6 +1,6 @@
 from starlette.applications import Starlette
 from starlette.routing import Route
-from starlette.responses import PlainTextResponse, HTMLResponse
+from starlette.responses import PlainTextResponse, JSONResponse
 from io import BytesIO
 from PIL import Image
 import Captioner
@@ -23,15 +23,17 @@ async def analyser(request):
     _filename = _f['file'].filename
     _fileData = await _f['file'].read()
     image_bytes = BytesIO(_fileData)
-    app.state.CAPTIONER.predict(Image.open(image_bytes))
-    return PlainTextResponse(f"Got it {_filename}")
+    res = app.state.CAPTIONER.predict(Image.open(image_bytes))
+    return JSONResponse({'res': res})
 
 
 def startup():
     app.state.CAPTIONER = Captioner.Captioner()
 
 
-app = Starlette(debug=True, on_startup=[startup], routes=[
+routers = [
     Route('/', homepage),
-    Route('/analyze', analyser, methods=["POST"])
-])
+    Route('/api/analyze', analyser, methods=["POST"])
+]
+
+app = Starlette(debug=True, on_startup=[startup], routes=routers)
