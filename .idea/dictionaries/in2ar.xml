@@ -2,6 +2,7 @@
   <dictionary name="in2ar">
     <words>
       <w>captioner</w>
+      <w>lstm</w>
     </words>
   </dictionary>
 </component>

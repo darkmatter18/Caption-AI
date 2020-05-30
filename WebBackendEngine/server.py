@@ -23,7 +23,7 @@ async def analyser(request):
     _filename = _f['file'].filename
     _fileData = await _f['file'].read()
     image_bytes = BytesIO(_fileData)
-    app.state.CAPTIONER.result(Image.open(image_bytes))
+    app.state.CAPTIONER.predict(Image.open(image_bytes))
     return PlainTextResponse(f"Got it {_filename}")
 
 
