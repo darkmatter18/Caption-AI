@@ -24,7 +24,7 @@ jobs:
       
       - name: Download Models
         run: |
-          wget https://github.com/darkmatter18/Caption-AI/releases/download/1.0.0-alpha.1/models.zip
+          wget ${{ secrets.MODEL_URL }}
           mkdir -p ./WebBackendEngine/models
           mv models.zip ./WebBackendEngine/models
       
