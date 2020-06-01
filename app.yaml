@@ -1,6 +1,6 @@
 runtime: python
 env: flex
-entrypoint: gunicorn -k uvicorn.workers.UvicornWorker -b :$PORT --chdir /WebBackendEngine server:app
+entrypoint: gunicorn -k uvicorn.workers.UvicornWorker -b :$PORT --chdir ./WebBackendEngine server:app
 
 runtime_config:
   python_version: 3

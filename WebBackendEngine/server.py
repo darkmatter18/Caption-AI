@@ -1,6 +1,6 @@
 from starlette.applications import Starlette
 from starlette.routing import Route
-from starlette.responses import PlainTextResponse, JSONResponse
+from starlette.responses import PlainTextResponse, JSONResponse, HTMLResponse
 from io import BytesIO
 from PIL import Image
 import Captioner
