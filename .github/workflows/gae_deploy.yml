@@ -30,7 +30,7 @@ jobs:
       
       - name: Unzip
         run: |
-          unzip ./WebBackendEngine/models/models.zip
+          unzip ./WebBackendEngine/models/models.zip -d ./WebBackendEngine/models/
           
       # Deploy App to App Engine
       - name: Deploy
