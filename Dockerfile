@@ -9,8 +9,6 @@ RUN pip install --upgrade -r requirements.txt
 
 COPY WebBackendEngine /
 
-RUN uvicorn server:app --reload --port 8080
-
 EXPOSE 8080
 
 CMD ["uvicorn", "server:app", "--reload", "--port", "8080"]
