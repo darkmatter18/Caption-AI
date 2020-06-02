@@ -1,11 +1,13 @@
-from starlette.applications import Starlette
-from starlette.routing import Route, Mount
-from starlette.responses import JSONResponse, HTMLResponse, FileResponse
-from starlette.staticfiles import StaticFiles
-from io import BytesIO
-from PIL import Image
 import os
 import Captioner
+from PIL import Image
+from io import BytesIO
+from starlette.routing import Route, Mount
+from starlette.middleware import Middleware
+from starlette.applications import Starlette
+from starlette.staticfiles import StaticFiles
+from starlette.responses import JSONResponse, FileResponse
+from starlette.middleware.httpsredirect import HTTPSRedirectMiddleware
 
 
 def homepage(request):
@@ -13,12 +15,15 @@ def homepage(request):
 
 
 async def analyser(request):
-    _f = await request.form()
-    _filename = _f['file'].filename
-    _fileData = await _f['file'].read()
-    image_bytes = BytesIO(_fileData)
-    res = app.state.CAPTIONER.predict(Image.open(image_bytes))
-    return JSONResponse({'res': res})
+    try:
+        _f = await request.form()
+        _filename = _f['file'].filename
+        _fileData = await _f['file'].read()
+        image_bytes = BytesIO(_fileData)
+        res = app.state.CAPTIONER.predict(Image.open(image_bytes))
+        return JSONResponse({'res': res})
+    except IndexError:
+        return JSONResponse({e: "No Data Found"}, 500)
 
 
 def startup():
@@ -32,4 +37,8 @@ routers = [
     Mount('/', app=StaticFiles(directory='client'), name="FrontEnd")
 ]
 
-app = Starlette(debug=True, on_startup=[startup], routes=routers)
+middleware = [
+    Middleware(HTTPSRedirectMiddleware)
+]
+
+app = Starlette(debug=True, on_startup=[startup], routes=routers, middleware=middleware)
