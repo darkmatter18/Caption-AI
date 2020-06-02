@@ -41,4 +41,4 @@ middleware = [
     Middleware(HTTPSRedirectMiddleware)
 ]
 
-app = Starlette(debug=True, on_startup=[startup], routes=routers, middleware=middleware)
+app = Starlette(debug=True, on_startup=[startup], routes=routers)
