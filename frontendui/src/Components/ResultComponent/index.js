@@ -3,7 +3,7 @@ import { useHistory, Redirect, Link } from 'react-router-dom';
 
 const ResultComponent = () => {
     const history = useHistory();
-    if (history.location.state == undefined || history.location.state == null) {
+    if (history.location.state === undefined || history.location.state === null) {
         return (
             <Redirect to="/" />
         )
