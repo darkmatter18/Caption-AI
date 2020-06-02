@@ -17,7 +17,6 @@ def homepage(request):
 async def analyser(request):
     try:
         _f = await request.form()
-        _filename = _f['file'].filename
         _fileData = await _f['file'].read()
         image_bytes = BytesIO(_fileData)
         res = app.state.CAPTIONER.predict(Image.open(image_bytes))
