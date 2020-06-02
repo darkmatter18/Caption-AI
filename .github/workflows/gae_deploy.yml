@@ -82,6 +82,7 @@ jobs:
   
   setup-build-deploy:
     name: Deploy
+    needs: [test, build, compile]
     runs-on: ubuntu-latest
 
     steps:
