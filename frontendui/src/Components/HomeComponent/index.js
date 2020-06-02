@@ -8,16 +8,21 @@ const HomeComponent = () => {
     const [file, setfile] = useState(null);
 
     const uploadApi = async (data) => {
-        try {
-            const res = await axios.post('/api/analyze', data, {
-                headers: {
-                    'Content-Type': "multipart/form-data"
-                }
-            });
-            history.push('/result', {res: res.data});
-        } catch (e) {
-            console.log(e);
-        }   
+        if(file === null) {
+            alert("Select a file before Submitting");
+        }
+        else {
+            try {
+                const res = await axios.post('/api/analyze', data, {
+                    headers: {
+                        'Content-Type': "multipart/form-data"
+                    }
+                });
+                history.push('/result', {res: res.data});
+            } catch (e) {
+                console.log(e);
+            }
+        }  
     }
 
     const upload = (e) => {
