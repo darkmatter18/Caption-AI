@@ -1,1 +1,54 @@
+name: Test Suites
+on:
+  push:
+    branches: 
+      - development
 
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    
+    env:
+      working_dir: ./frontendui
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Node Setup
+        uses: actions/setup-node@v1
+        with:
+          version: 12
+      
+      - name: NPM Install
+        run: npm ci
+        working-directory: ${{env.working_dir}}
+      
+      - name: Test Suites
+        run: npm test
+        working-directory: ${{env.working_dir}}
+  build:
+    name: Build
+    needs: [test]
+    runs-on: ubuntu-latest
+    
+    env:
+      working_dir: ./frontendui
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Node Setup
+        uses: actions/setup-node@v1
+        with:
+          version: 12
+      
+      - name: NPM Install
+        run: npm ci
+        working-directory: ${{env.working_dir}}
+      
+      - name: Build Frontend
+        run: npm build
+        working-directory: ${{env.working_dir}}
