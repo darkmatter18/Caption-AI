@@ -61,11 +61,11 @@ jobs:
          name: forntendbuild
          path: frontendui/build
   
-  compile:
-    name: Compile
+  setup-build-deploy:
+    name: Compile & Deploy
     needs: [test, build]
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -79,15 +79,6 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -R
         working-directory: WebBackendEngine/client
-  
-  setup-build-deploy:
-    name: Deploy
-    needs: [test, build, compile]
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
 
       # Setup and configure gcloud CLI
       - name: GAE Setup
