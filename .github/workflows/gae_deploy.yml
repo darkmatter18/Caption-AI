@@ -6,6 +6,80 @@ on:
       - master
 
 jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    
+    env:
+      working_dir: ./frontendui
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Node Setup
+        uses: actions/setup-node@v1
+        with:
+          version: 12
+      
+      - name: NPM Install
+        run: npm ci
+        working-directory: ${{env.working_dir}}
+      
+      - name: Test Suites
+        run: npm test
+        working-directory: ${{env.working_dir}}
+  
+  build:
+    name: Build
+    needs: [test]
+    runs-on: ubuntu-latest
+    
+    env:
+      working_dir: ./frontendui
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Node Setup
+        uses: actions/setup-node@v1
+        with:
+          version: 12
+      
+      - name: NPM Install
+        run: npm ci
+        working-directory: ${{env.working_dir}}
+      
+      - name: Build Frontend
+        run: npm run build
+        working-directory: ${{env.working_dir}}
+      
+      - name: Upload Frontend Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+         name: forntendbuild
+         path: frontendui/build
+  
+  compile:
+    name: Compile
+    needs: [test, build]
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Download Frontend Artifacts
+        uses: actions/download-artifact@v2
+        with:
+         name: forntendbuild
+         path: WebBackendEngine/client
+      
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: WebBackendEngine/client
+  
   setup-build-deploy:
     name: Deploy
     runs-on: ubuntu-latest
