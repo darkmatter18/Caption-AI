@@ -1,21 +1,15 @@
 from starlette.applications import Starlette
-from starlette.routing import Route
-from starlette.responses import PlainTextResponse, JSONResponse, HTMLResponse
+from starlette.routing import Route, Mount
+from starlette.responses import JSONResponse, HTMLResponse, FileResponse
+from starlette.staticfiles import StaticFiles
 from io import BytesIO
 from PIL import Image
+import os
 import Captioner
 
 
 def homepage(request):
-    return HTMLResponse('''<form enctype="multipart/form-data" method="post" action="/analyze">
-    <div><span>SELECT IMAGE</span></div>
-    <input name="file" type="file" />
-    </div>
-    <button type="submit">
-    <span>Analyze</span>
-    </button>
-    </form>
-    <div id="r''')
+    return FileResponse(os.path.join(os.getcwd(), 'client', 'index.html'))
 
 
 async def analyser(request):
@@ -32,8 +26,10 @@ def startup():
 
 
 routers = [
-    Route('/', homepage),
-    Route('/api/analyze', analyser, methods=["POST"])
+    Route('/api/analyze', analyser, methods=["POST"]),
+    Route('/', homepage, methods=['GET']),
+    Route('/result', homepage, methods=['GET']),
+    Mount('/', app=StaticFiles(directory='client'), name="FrontEnd")
 ]
 
 app = Starlette(debug=True, on_startup=[startup], routes=routers)
