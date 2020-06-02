@@ -52,3 +52,29 @@ jobs:
       - name: Build Frontend
         run: npm build
         working-directory: ${{env.working_dir}}
+      
+      - name: Upload Frontend Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+         name: forntendbuild
+         path: frontendui/build
+      
+  
+  compile:
+    name: Compile
+    needs: [test, build]
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Download Frontend Artifacts
+        uses: actions/download-artifact@v2
+        with:
+         name: forntendbuild
+         path: WebBackendEngine/client
+      
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: WebBackendEngine/client
