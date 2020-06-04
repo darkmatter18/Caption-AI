@@ -7,8 +7,8 @@ const useStyles = makeStyles((theme) => ({
         paddingTop: '0.5rem',
         paddingBottom: '0.5rem',
         borderBottom: `1px solid ${theme.palette.divider}`,
-        color: blue.A700,
-        textShadow: `0px 0px 10px ${blue.A100}`
+        color: theme.palette.primary.main,
+        textShadow: `0px 0px 10px ${theme.palette.primary.light}`
     },
     toolbar: {
         flexWrap: 'wrap',
