@@ -28,7 +28,7 @@ const HeaderComponent = () => {
         <React.Fragment>
             <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
                 <Toolbar className={classes.toolbar}>
-                    <Typography variant="h2" color="inherit" noWrap className={classes.toolbarTitle} align="center">
+                    <Typography variant="h3" color="inherit" className={classes.toolbarTitle} align="center">
                         Caption - AI
                     </Typography>
                 </Toolbar>
