@@ -41,7 +41,7 @@ const HomeComponent = () => {
         <React.Fragment>
             <div>
                 <form>
-                    <input type="file" name="file" onChange={e => setfile(e.target.files[0])} />
+                    <input type="file" accept="image/*" name="file" onChange={e => setfile(e.target.files[0])} />
                     <button onClick={upload}>Make Caption</button>
                 </form>
             </div>
