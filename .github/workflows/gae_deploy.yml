@@ -62,7 +62,7 @@ jobs:
          path: frontendui/build
   
   setup-build-deploy:
-    name: Compile & Deploy
+    name: Cleanup & Deploy
     needs: [test, build]
     runs-on: ubuntu-latest
 
@@ -76,9 +76,13 @@ jobs:
          name: forntendbuild
          path: WebBackendEngine/client
       
+      - name: Cleanup
+        run: |
+         rm -r frontendui
+         rm -r ImageCaptioning
+         
       - name: Display structure of downloaded files
         run: ls -R
-        working-directory: WebBackendEngine/client
 
       # Setup and configure gcloud CLI
       - name: GAE Setup
