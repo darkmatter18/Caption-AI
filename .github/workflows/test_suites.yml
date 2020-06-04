@@ -1,5 +1,8 @@
 name: Test Suites
 on:
+  pull_request:
+    branches: 
+      - master
   push:
     branches: 
       - development
@@ -19,7 +22,7 @@ jobs:
       - name: Node Setup
         uses: actions/setup-node@v1
         with:
-          version: 12
+          node-version: 12
       
       - name: NPM Install
         run: npm ci
@@ -43,7 +46,7 @@ jobs:
       - name: Node Setup
         uses: actions/setup-node@v1
         with:
-          version: 12
+          node-version: 12
       
       - name: NPM Install
         run: npm ci
@@ -61,7 +64,7 @@ jobs:
       
   
   compile:
-    name: Compile
+    name: Cleanup
     needs: [test, build]
     runs-on: ubuntu-latest
     
@@ -75,6 +78,10 @@ jobs:
          name: forntendbuild
          path: WebBackendEngine/client
       
+      - name: Cleanup
+        run: |
+         rm -r frontendui
+         rm -r ImageCaptioning
+         
       - name: Display structure of downloaded files
         run: ls -R
-        working-directory: WebBackendEngine/client
