@@ -5,7 +5,7 @@ import UploadIcon from './uploadIcon.svg';
 import { useStyles } from './style';
 
 
-const ImageUploaderComponent = () => {
+const ImageUploaderComponent = (props) => {
     const ACCEPT = 'image/*';
     const IMGEXTENSIONS = ['.jpg', '.jpeg', '.gif', '.png'];
     const MAXFILESOZE = 5242880;
@@ -82,6 +82,8 @@ const ImageUploaderComponent = () => {
             setdataURL(FileData.dataURL);
             setfile(FileData.file);
         });
+
+        props.onChange(file);
     }
 
     const renderPreview = () => {
@@ -100,6 +102,8 @@ const ImageUploaderComponent = () => {
     const removeImage = () => {
         setfile(null);
         setdataURL(null);
+        
+        props.onChange(file);
     }
 
     return (
