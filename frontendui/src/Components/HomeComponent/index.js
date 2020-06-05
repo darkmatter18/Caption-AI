@@ -1,10 +1,28 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import { Container, makeStyles, Grid, Card, CardContent, Button } from '@material-ui/core';
+import ImageUploaderComponent from '../ImageUploaderComponent';
 
+
+const useStyles = makeStyles((theme) => ({
+    container: {
+        marginTop: '1rem',
+        height: '25rem'
+    },
+    innerLeftContainer: {
+        padding: theme.spacing(2),
+        height: '25rem'
+    },
+    innerRightContainer: {
+        padding: theme.spacing(2),
+        textAlign: "center"
+    }
+}))
 
 const HomeComponent = () => {
-    const history = useHistory()
+    const classes = useStyles();
+    const history = useHistory();
     const [file, setfile] = useState(null);
     const [progress, setprogress] = useState(null);
 
@@ -37,17 +55,39 @@ const HomeComponent = () => {
 
         uploadApi(formData);
     }
+
+    const onChange = file => {
+        console.log(file);
+        setfile(file);
+    };
+
     return (
         <React.Fragment>
-            <div>
-                <form>
-                    <input type="file" accept="image/*" name="file" onChange={e => setfile(e.target.files[0])} />
-                    <button onClick={upload}>Make Caption</button>
-                </form>
-            </div>
-            <div>
-                <span>{progress !== null ? `Uploading: ${progress}%` : <React.Fragment />}</span>
-            </div>
+            <Container className={classes.container}>
+                <Grid container alignItems="center">
+                    <Grid item xs={12} sm={12} md={6}>
+                        <Container>
+                            <Card className={classes.innerLeftContainer}>
+                                <CardContent>
+                                    <form>
+                                        <ImageUploaderComponent onChange={onChange} />
+                                    </form>
+                                </CardContent>
+                            </Card>
+                        </Container>
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={6}>
+                        <Container>
+                            <Card className={classes.innerRightContainer}>
+                                <CardContent>
+                                    <Button variant="contained" color="primary" onClick={upload}>Make Caption</Button>
+                                    <span>{progress !== null ? `Uploading: ${progress}%` : <React.Fragment />}</span>
+                                </CardContent>
+                            </Card>
+                        </Container>
+                    </Grid>
+                </Grid>
+            </Container>
         </React.Fragment>
     )
 }
