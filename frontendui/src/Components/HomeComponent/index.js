@@ -58,7 +58,7 @@ const HomeComponent = () => {
                     },
                     cancelToken: source.token
                 });
-                history.push('/result', { res: res.data, file: file });
+                history.push('/result', { res: res.data, file: { file } });
             } catch (e) {
                 console.log("Error on Network!!");
                 console.log(e);
@@ -79,7 +79,6 @@ const HomeComponent = () => {
     }
 
     const onChange = file => {
-        console.log(file);
         setfile(file);
     };
 
