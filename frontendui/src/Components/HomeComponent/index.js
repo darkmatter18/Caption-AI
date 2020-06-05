@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios, { CancelToken } from 'axios';
+import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import { Container, makeStyles, Grid, Card, CardContent, Button, LinearProgress, Typography } from '@material-ui/core';
 import ImageUploaderComponent from '../ImageUploaderComponent';
@@ -30,7 +30,7 @@ const HomeComponent = () => {
         UPLOADING: 1,
         ANALYSING: 2
     };
-    const source = CancelToken.source();
+    const source = axios.CancelToken.source();
 
     const classes = useStyles();
     const history = useHistory();
