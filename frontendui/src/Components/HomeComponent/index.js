@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import axios, { CancelToken } from 'axios';
 import { useHistory } from 'react-router-dom';
-import { Container, makeStyles, Grid, Card, CardContent, Button, LinearProgress, Typography} from '@material-ui/core';
+import { Container, makeStyles, Grid, Card, CardContent, Button, LinearProgress, Typography } from '@material-ui/core';
 import ImageUploaderComponent from '../ImageUploaderComponent';
 
 
@@ -30,6 +30,7 @@ const HomeComponent = () => {
         UPLOADING: 1,
         ANALYSING: 2
     };
+    const source = CancelToken.source();
 
     const classes = useStyles();
     const history = useHistory();
@@ -55,13 +56,18 @@ const HomeComponent = () => {
                         }
                         setprogress(percentCompleted);
                     },
+                    cancelToken: source.token
                 });
-                setnetworkState(NETWORK_STATE.AVAILABLE);
                 history.push('/result', { res: res.data });
             } catch (e) {
                 console.log("Error on Network!!");
-                setnetworkState(NETWORK_STATE.AVAILABLE);
                 console.log(e);
+                if (axios.isCancel(e)) {
+                    console.log('Request canceled', e.message);
+                }
+            }
+            finally {
+                setnetworkState(NETWORK_STATE.AVAILABLE);
             }
         }
     }
@@ -80,8 +86,8 @@ const HomeComponent = () => {
     };
 
     const renderProgress = () => {
-        if(networkState === NETWORK_STATE.UPLOADING){
-            return(
+        if (networkState === NETWORK_STATE.UPLOADING) {
+            return (
                 <Grid container alignItems="center">
                     <Grid item xs={12} sm={12} md={4}>
                         <Typography variant="caption">
@@ -89,13 +95,12 @@ const HomeComponent = () => {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={12} md={8}>
-                    <LinearProgress variant="determinate" value={progress} />
-
+                        <LinearProgress variant="determinate" value={progress} />
                     </Grid>
                 </Grid>
             )
         }
-        if(networkState === NETWORK_STATE.ANALYSING){
+        if (networkState === NETWORK_STATE.ANALYSING) {
             return (
                 <Grid container alignItems="center">
                     <Grid item xs={12} sm={12} md={4}>
@@ -104,8 +109,7 @@ const HomeComponent = () => {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={12} md={8}>
-                    <LinearProgress />
-
+                        <LinearProgress />
                     </Grid>
                 </Grid>
             )
@@ -118,13 +122,13 @@ const HomeComponent = () => {
         }
         else if (networkState === NETWORK_STATE.UPLOADING) {
             return (
-                <Button variant="contained" color="secondary" size="large">
+                <Button variant="contained" color="secondary" size="large" onClick={() => { source.cancel("Operation cancelled by User") }}>
                     Cancel
                 </Button>
             )
         }
         else if (networkState === NETWORK_STATE.ANALYSING) {
-            return <Button variant="contained" color="secondary" size="large">Cancel</Button>
+            return <Button variant="contained" color="secondary" size="large" onClick={() => { source.cancel("Operation cancelled by User") }}>Cancel</Button>
         }
     }
     return (
