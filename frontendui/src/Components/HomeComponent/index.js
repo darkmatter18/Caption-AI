@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
-import { Container, makeStyles, Grid, Card, CardContent, Button } from '@material-ui/core';
+import { Container, makeStyles, Grid, Card, CardContent, Button, Box, CircularProgress, Typography } from '@material-ui/core';
 import ImageUploaderComponent from '../ImageUploaderComponent';
 
 
@@ -21,10 +21,17 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const HomeComponent = () => {
+    const NETWORK_STATE = {
+        AVAILABLE: 0,
+        UPLOADING: 1,
+        ANALYSING: 2
+    };
+
     const classes = useStyles();
     const history = useHistory();
     const [file, setfile] = useState(null);
-    const [progress, setprogress] = useState(null);
+    const [networkState, setnetworkState] = useState(NETWORK_STATE.AVAILABLE);
+    const [progress, setprogress] = useState(0);
 
     const uploadApi = async (data) => {
         if (file === null) {
@@ -32,17 +39,24 @@ const HomeComponent = () => {
         }
         else {
             try {
+                setnetworkState(NETWORK_STATE.UPLOADING);
                 const res = await axios.post('/api/analyze', data, {
                     headers: {
                         'Content-Type': "multipart/form-data"
                     },
                     onUploadProgress: (progressEvent) => {
                         const percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total);
+                        if (percentCompleted === 100) {
+                            setnetworkState(NETWORK_STATE.ANALYSING);
+                        }
                         setprogress(percentCompleted);
-                    }
+                    },
                 });
+                setnetworkState(NETWORK_STATE.AVAILABLE);
                 history.push('/result', { res: res.data });
             } catch (e) {
+                console.log("Error on Network!!");
+                setnetworkState(NETWORK_STATE.AVAILABLE);
                 console.log(e);
             }
         }
@@ -61,6 +75,37 @@ const HomeComponent = () => {
         setfile(file);
     };
 
+    const renderSubmitButton = () => {
+        if (networkState === NETWORK_STATE.AVAILABLE) {
+            return <Button variant="contained" color="primary" onClick={upload}>Make Caption</Button>
+        }
+        else if (networkState === NETWORK_STATE.UPLOADING) {
+            return (
+                <Button variant="contained" color="primary">
+                    <Box position="relative" display="inline-flex">
+                        <CircularProgress variant="static" value={progress}/>
+                        <Box
+                            top={0}
+                            left={0}
+                            bottom={0}
+                            right={0}
+                            position="absolute"
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="center"
+                        >
+                            <Typography variant="caption" component="div" color="textSecondary">
+                                {`${progress}%`}
+                            </Typography>
+                        </Box>
+                    </Box>
+                </Button>
+            )
+        }
+        else if (networkState === NETWORK_STATE.ANALYSING){
+            return <Button variant="contained" color="primary" >ANALYSING...</Button>
+        }
+    }
     return (
         <React.Fragment>
             <Container className={classes.container}>
@@ -80,8 +125,7 @@ const HomeComponent = () => {
                         <Container>
                             <Card className={classes.innerRightContainer}>
                                 <CardContent>
-                                    <Button variant="contained" color="primary" onClick={upload}>Make Caption</Button>
-                                    <span>{progress !== null ? `Uploading: ${progress}%` : <React.Fragment />}</span>
+                                    {renderSubmitButton()}
                                 </CardContent>
                             </Card>
                         </Container>
