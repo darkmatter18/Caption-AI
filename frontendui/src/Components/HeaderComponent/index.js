@@ -1,6 +1,5 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, makeStyles } from '@material-ui/core';
-import { blue } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
