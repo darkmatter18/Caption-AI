@@ -58,15 +58,13 @@ const HomeComponent = () => {
                     },
                     cancelToken: source.token
                 });
-                history.push('/result', { res: res.data });
+                history.push('/result', { res: res.data, file: file });
             } catch (e) {
                 console.log("Error on Network!!");
                 console.log(e);
                 if (axios.isCancel(e)) {
                     console.log('Request canceled', e.message);
                 }
-            }
-            finally {
                 setnetworkState(NETWORK_STATE.AVAILABLE);
             }
         }
