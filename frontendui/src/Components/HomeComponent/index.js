@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
-import { Container, makeStyles, Grid, Card, CardContent, Button, Box, CircularProgress, Typography } from '@material-ui/core';
+import { Container, makeStyles, Grid, Card, CardContent, Button, LinearProgress, Typography} from '@material-ui/core';
 import ImageUploaderComponent from '../ImageUploaderComponent';
 
 
@@ -15,8 +15,12 @@ const useStyles = makeStyles((theme) => ({
         height: '25rem'
     },
     innerRightContainer: {
+        height: '10rem',
         padding: theme.spacing(2),
         textAlign: "center"
+    },
+    uploadingButtonInner: {
+        color: theme.palette.background.paper
     }
 }))
 
@@ -75,35 +79,52 @@ const HomeComponent = () => {
         setfile(file);
     };
 
+    const renderProgress = () => {
+        if(networkState === NETWORK_STATE.UPLOADING){
+            return(
+                <Grid container alignItems="center">
+                    <Grid item xs={12} sm={12} md={4}>
+                        <Typography variant="caption">
+                            Uploading...  {`${progress}%`}
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={8}>
+                    <LinearProgress variant="determinate" value={progress} />
+
+                    </Grid>
+                </Grid>
+            )
+        }
+        if(networkState === NETWORK_STATE.ANALYSING){
+            return (
+                <Grid container alignItems="center">
+                    <Grid item xs={12} sm={12} md={4}>
+                        <Typography variant="caption">
+                            Analyzing...
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={8}>
+                    <LinearProgress />
+
+                    </Grid>
+                </Grid>
+            )
+        }
+    }
+
     const renderSubmitButton = () => {
         if (networkState === NETWORK_STATE.AVAILABLE) {
-            return <Button variant="contained" color="primary" onClick={upload}>Make Caption</Button>
+            return <Button variant="contained" size="large" color="primary" onClick={upload}>Make Caption</Button>
         }
         else if (networkState === NETWORK_STATE.UPLOADING) {
             return (
-                <Button variant="contained" color="primary">
-                    <Box position="relative" display="inline-flex">
-                        <CircularProgress variant="static" value={progress}/>
-                        <Box
-                            top={0}
-                            left={0}
-                            bottom={0}
-                            right={0}
-                            position="absolute"
-                            display="flex"
-                            alignItems="center"
-                            justifyContent="center"
-                        >
-                            <Typography variant="caption" component="div" color="textSecondary">
-                                {`${progress}%`}
-                            </Typography>
-                        </Box>
-                    </Box>
+                <Button variant="contained" color="secondary" size="large">
+                    Cancel
                 </Button>
             )
         }
-        else if (networkState === NETWORK_STATE.ANALYSING){
-            return <Button variant="contained" color="primary" >ANALYSING...</Button>
+        else if (networkState === NETWORK_STATE.ANALYSING) {
+            return <Button variant="contained" color="secondary" size="large">Cancel</Button>
         }
     }
     return (
@@ -127,6 +148,7 @@ const HomeComponent = () => {
                                 <CardContent>
                                     {renderSubmitButton()}
                                 </CardContent>
+                                {renderProgress()}
                             </Card>
                         </Container>
                     </Grid>
