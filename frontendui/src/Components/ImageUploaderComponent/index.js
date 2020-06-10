@@ -102,31 +102,32 @@ const ImageUploaderComponent = (props) => {
     const removeImage = () => {
         setfile(null);
         setdataURL(null);
-        
+
         props.onChange(file);
     }
 
     return (
         <React.Fragment>
-            <div>
-                <div className={classes.fileContainer}>
-                    <img src={UploadIcon} className="uploadIcon" alt="Upload Icon" />
-                    <Typography variant="body2">Max file size: 5mb</Typography>
-                    <div className={classes.errorsContainer}>
-                        {renderErrors()}
-                    </div>
-                    <Button variant="outlined" color="primary" onClick={triggerFileUpload}>
-                        Choose image
-                    </Button>
-                    <input
-                        hidden={true}
-                        type="file"
-                        ref={input => setinputElement(input)}
-                        onChange={onDropFile}
-                        accept={ACCEPT}
-                    />
-                    {renderPreview()}
-                </div>
+            <div className={classes.fileContainer}>
+                {!file ? (
+                    <React.Fragment>
+                        <img src={UploadIcon} className="uploadIcon" alt="Upload Icon" />
+                        <Typography variant="body2">Max file size: 5mb</Typography>
+                        <div className={classes.errorsContainer}>
+                            {renderErrors()}
+                        </div>
+                        <Button variant="outlined" color="primary" onClick={triggerFileUpload}>
+                            Choose image
+                            </Button>
+                        <input
+                            hidden={true}
+                            type="file"
+                            ref={input => setinputElement(input)}
+                            onChange={onDropFile}
+                            accept={ACCEPT}
+                        />
+                    </React.Fragment>
+                ) : renderPreview()}
             </div>
         </React.Fragment>
     )
