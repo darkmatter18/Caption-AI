@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Typography, Button } from '@material-ui/core';
+import Close from '@material-ui/icons/Close';
 
 import UploadIcon from './uploadIcon.svg';
 import { useStyles } from './style';
@@ -91,7 +92,7 @@ const ImageUploaderComponent = (props) => {
             return (
                 <div className={classes.uploadPicturesWrapper}>
                     <div className={classes.uploadPictureContainer}>
-                        <div className={classes.deleteImage} onClick={() => removeImage()}>X</div>
+                        <Close className={classes.deleteImage} onClick={() => removeImage()} />
                         <img src={dataURL} style={{ width: '100%' }} alt="preview" />
                     </div>
                 </div>
@@ -103,7 +104,7 @@ const ImageUploaderComponent = (props) => {
         setfile(null);
         setdataURL(null);
 
-        props.onChange(file);
+        props.onChange(null);
     }
 
     return (
