@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 import torchvision.models as models
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-#device = torch.device("cpu")
+#device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cpu")
 
 class EncoderCNN(nn.Module):
     def __init__(self, embed_size):
@@ -54,30 +54,35 @@ class DecoderRNN(nn.Module):
         return (torch.zeros(self.num_layers, batch_size, self.hidden_size, device = device),
                 torch.zeros(self.num_layers, batch_size, self.hidden_size, device = device))
     
-    def forward(self, features, hidden):
+#     def forward(self, features, captions):
+#         # Initialize the hidden state
+#         self.hidden = self.init_hidden(features.shape[0])
         
-        # LSTM
+#         # Embedding the captions
+#         embedded = self.embed(captions[:,:-1])
+#         embedded = torch.cat((features.unsqueeze(1), embedded), dim=1)
+        
+#         # LSTM
+#         lstm_out, self.hidden = self.lstm(embedded, self.hidden)
+#         lstm_out = self.drop(lstm_out)
+        
+#         # Functional component
+#         out = self.fc(lstm_out)
+#         return out
+    
+    def forward(self, features, hidden):
+        """
+        Forward Function for infarence
+        """
         lstm_out, hidden = self.lstm(features, hidden)
-        # Functional component
+        lstm_out = self.drop(lstm_out)
+        
         out = self.fc(lstm_out)
         
         out = out.squeeze(1)
         out = out.argmax(dim=1)
         
         features = self.embed(out.unsqueeze(0))
-        
-#         # Embedding the captions
-#         embedded = self.embed(captions)
-#         # print(embedded.shape)
-#         # print(features.unsqueeze(1).shape)
-#         # print(embedded.shape)
-#         embedded = torch.cat((features.unsqueeze(1), embedded), dim=1)
-
-#         # LSTM
-#         lstm_out, hidden = self.lstm(features, hidden)
-        
-#         # Functional component
-#         out = self.fc(lstm_out)
         return out, features, hidden
 
     def sample(self, inputs, states=None, max_len=20):

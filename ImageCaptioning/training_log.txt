@@ -1,160 +1,400 @@
-Epoch [1/5], Step [100/3236], Loss: 5.1863, Perplexity: 178.8072, Valid Loss: 4.6542
-Epoch [1/5], Step [200/3236], Loss: 4.6019, Perplexity: 99.6717, Valid Loss: 4.4737
-Epoch [1/5], Step [300/3236], Loss: 4.4475, Perplexity: 85.4121, Valid Loss: 4.2207
-Epoch [1/5], Step [400/3236], Loss: 4.2388, Perplexity: 69.3265, Valid Loss: 4.1882
-Epoch [1/5], Step [500/3236], Loss: 4.1013, Perplexity: 60.4200, Valid Loss: 3.9521
-Epoch [1/5], Step [600/3236], Loss: 3.9329, Perplexity: 51.0557, Valid Loss: 3.8492
-Epoch [1/5], Step [700/3236], Loss: 3.8438, Perplexity: 46.7037, Valid Loss: 3.8553
-Epoch [1/5], Step [800/3236], Loss: 3.7304, Perplexity: 41.6951, Valid Loss: 3.6854
-Epoch [1/5], Step [900/3236], Loss: 3.6505, Perplexity: 38.4932, Valid Loss: 3.6326
-Epoch [1/5], Step [1000/3236], Loss: 3.6488, Perplexity: 38.4288, Valid Loss: 3.7041
-Epoch [1/5], Step [1100/3236], Loss: 3.5339, Perplexity: 34.2564, Valid Loss: 3.5519
-Epoch [1/5], Step [1200/3236], Loss: 3.5109, Perplexity: 33.4783, Valid Loss: 3.5083
-Epoch [1/5], Step [1300/3236], Loss: 3.4759, Perplexity: 32.3262, Valid Loss: 3.5007
-Epoch [1/5], Step [1400/3236], Loss: 3.3772, Perplexity: 29.2892, Valid Loss: 3.4287
-Epoch [1/5], Step [1500/3236], Loss: 3.3654, Perplexity: 28.9452, Valid Loss: 3.3894
-Epoch [1/5], Step [1600/3236], Loss: 3.3577, Perplexity: 28.7219, Valid Loss: 3.4015
-Epoch [1/5], Step [1700/3236], Loss: 3.2778, Perplexity: 26.5177, Valid Loss: 3.3634
-Epoch [1/5], Step [1800/3236], Loss: 3.2396, Perplexity: 25.5242, Valid Loss: 3.3023
-Epoch [1/5], Step [1900/3236], Loss: 3.1747, Perplexity: 23.9207, Valid Loss: 3.2780
-Epoch [1/5], Step [2000/3236], Loss: 3.1662, Perplexity: 23.7175, Valid Loss: 3.1622
-Epoch [1/5], Step [2100/3236], Loss: 3.1068, Perplexity: 22.3487, Valid Loss: 3.0958
-Epoch [1/5], Step [2200/3236], Loss: 3.0232, Perplexity: 20.5563, Valid Loss: 3.0707
-Epoch [1/5], Step [2300/3236], Loss: 2.9561, Perplexity: 19.2233, Valid Loss: 3.0347
-Epoch [1/5], Step [2400/3236], Loss: 2.9529, Perplexity: 19.1621, Valid Loss: 3.0045
-Epoch [1/5], Step [2500/3236], Loss: 2.9048, Perplexity: 18.2623, Valid Loss: 3.0016
-Epoch [1/5], Step [2600/3236], Loss: 2.8566, Perplexity: 17.4031, Valid Loss: 2.9403
-Epoch [1/5], Step [2700/3236], Loss: 2.8029, Perplexity: 16.4929, Valid Loss: 2.9051
-Epoch [1/5], Step [2800/3236], Loss: 2.8209, Perplexity: 16.7918, Valid Loss: 2.8716
-Epoch [1/5], Step [2900/3236], Loss: 2.7895, Perplexity: 16.2731, Valid Loss: 2.8604
-Epoch [1/5], Step [3000/3236], Loss: 2.8203, Perplexity: 16.7826, Valid Loss: 2.8477
-Epoch [1/5], Step [3100/3236], Loss: 2.7935, Perplexity: 16.3382, Valid Loss: 2.8053
-Epoch [1/5], Step [3200/3236], Loss: 2.7733, Perplexity: 16.0113, Valid Loss: 2.7665
-Epoch [2/5], Step [100/3236], Loss: 2.7090, Perplexity: 15.0143, Valid Loss: 2.7633
-Epoch [2/5], Step [200/3236], Loss: 2.7055, Perplexity: 14.9621, Valid Loss: 2.7540
-Epoch [2/5], Step [300/3236], Loss: 2.6936, Perplexity: 14.7845, Valid Loss: 2.7318
-Epoch [2/5], Step [400/3236], Loss: 2.6518, Perplexity: 14.1802, Valid Loss: 2.7367
-Epoch [2/5], Step [500/3236], Loss: 2.6688, Perplexity: 14.4227, Valid Loss: 2.7022
-Epoch [2/5], Step [600/3236], Loss: 2.6151, Perplexity: 13.6692, Valid Loss: 2.7104
-Epoch [2/5], Step [700/3236], Loss: 2.6175, Perplexity: 13.7013, Valid Loss: 2.6872
-Epoch [2/5], Step [800/3236], Loss: 2.5987, Perplexity: 13.4462, Valid Loss: 2.6734
-Epoch [2/5], Step [900/3236], Loss: 2.6259, Perplexity: 13.8175, Valid Loss: 2.6985
-Epoch [2/5], Step [1000/3236], Loss: 2.5968, Perplexity: 13.4206, Valid Loss: 2.6980
-Epoch [2/5], Step [1100/3236], Loss: 2.5627, Perplexity: 12.9708, Valid Loss: 2.6545
-Epoch [2/5], Step [1200/3236], Loss: 2.5263, Perplexity: 12.5065, Valid Loss: 2.6372
-Epoch [2/5], Step [1300/3236], Loss: 2.5393, Perplexity: 12.6707, Valid Loss: 2.6426
-Epoch [2/5], Step [1400/3236], Loss: 2.5703, Perplexity: 13.0701, Valid Loss: 2.6973
-Epoch [2/5], Step [1500/3236], Loss: 2.5501, Perplexity: 12.8078, Valid Loss: 2.6736
-Epoch [2/5], Step [1600/3236], Loss: 2.5191, Perplexity: 12.4178, Valid Loss: 2.6273
-Epoch [2/5], Step [1700/3236], Loss: 2.5424, Perplexity: 12.7104, Valid Loss: 2.6267
-Epoch [2/5], Step [1800/3236], Loss: 2.5240, Perplexity: 12.4780, Valid Loss: 2.6047
-Epoch [2/5], Step [1900/3236], Loss: 2.5486, Perplexity: 12.7886, Valid Loss: 2.6176
-Epoch [2/5], Step [2000/3236], Loss: 2.5150, Perplexity: 12.3665, Valid Loss: 2.5971
-Epoch [2/5], Step [2100/3236], Loss: 2.5298, Perplexity: 12.5510, Valid Loss: 2.5844
-Epoch [2/5], Step [2200/3236], Loss: 2.5011, Perplexity: 12.1962, Valid Loss: 2.5744
-Epoch [2/5], Step [2300/3236], Loss: 2.4708, Perplexity: 11.8319, Valid Loss: 2.5497
-Epoch [2/5], Step [2400/3236], Loss: 2.4623, Perplexity: 11.7321, Valid Loss: 2.5571
-Epoch [2/5], Step [2500/3236], Loss: 2.4576, Perplexity: 11.6771, Valid Loss: 2.6094
-Epoch [2/5], Step [2600/3236], Loss: 2.4610, Perplexity: 11.7171, Valid Loss: 2.5895
-Epoch [2/5], Step [2700/3236], Loss: 2.4811, Perplexity: 11.9550, Valid Loss: 2.5536
-Epoch [2/5], Step [2800/3236], Loss: 2.4616, Perplexity: 11.7241, Valid Loss: 2.5352
-Epoch [2/5], Step [2900/3236], Loss: 2.4659, Perplexity: 11.7746, Valid Loss: 2.5712
-Epoch [2/5], Step [3000/3236], Loss: 2.4659, Perplexity: 11.7740, Valid Loss: 2.5826
-Epoch [2/5], Step [3100/3236], Loss: 2.4255, Perplexity: 11.3079, Valid Loss: 2.5186
-Epoch [2/5], Step [3200/3236], Loss: 2.4609, Perplexity: 11.7156, Valid Loss: 2.5194
-Epoch [3/5], Step [100/3236], Loss: 2.4225, Perplexity: 11.2736, Valid Loss: 2.5151
-Epoch [3/5], Step [200/3236], Loss: 2.4031, Perplexity: 11.0575, Valid Loss: 2.4992
-Epoch [3/5], Step [300/3236], Loss: 2.4042, Perplexity: 11.0696, Valid Loss: 2.5038
-Epoch [3/5], Step [400/3236], Loss: 2.4289, Perplexity: 11.3469, Valid Loss: 2.5034
-Epoch [3/5], Step [500/3236], Loss: 2.3894, Perplexity: 10.9072, Valid Loss: 2.4736
-Epoch [3/5], Step [600/3236], Loss: 2.3970, Perplexity: 10.9903, Valid Loss: 2.4866
-Epoch [3/5], Step [700/3236], Loss: 2.4145, Perplexity: 11.1847, Valid Loss: 2.4750
-Epoch [3/5], Step [800/3236], Loss: 2.4277, Perplexity: 11.3324, Valid Loss: 2.4538
-Epoch [3/5], Step [900/3236], Loss: 2.3523, Perplexity: 10.5093, Valid Loss: 2.4998
-Epoch [3/5], Step [1000/3236], Loss: 2.3698, Perplexity: 10.6955, Valid Loss: 2.4712
-Epoch [3/5], Step [1100/3236], Loss: 2.3905, Perplexity: 10.9190, Valid Loss: 2.4823
-Epoch [3/5], Step [1200/3236], Loss: 2.3534, Perplexity: 10.5211, Valid Loss: 2.4623
-Epoch [3/5], Step [1300/3236], Loss: 2.4142, Perplexity: 11.1807, Valid Loss: 2.4598
-Epoch [3/5], Step [1400/3236], Loss: 2.3643, Perplexity: 10.6365, Valid Loss: 2.4864
-Epoch [3/5], Step [1500/3236], Loss: 2.3449, Perplexity: 10.4325, Valid Loss: 2.4645
-Epoch [3/5], Step [1600/3236], Loss: 2.3679, Perplexity: 10.6753, Valid Loss: 2.4512
-Epoch [3/5], Step [1700/3236], Loss: 2.3164, Perplexity: 10.1390, Valid Loss: 2.4534
-Epoch [3/5], Step [1800/3236], Loss: 2.3270, Perplexity: 10.2469, Valid Loss: 2.4393
-Epoch [3/5], Step [1900/3236], Loss: 2.3294, Perplexity: 10.2722, Valid Loss: 2.4736
-Epoch [3/5], Step [2000/3236], Loss: 2.3326, Perplexity: 10.3042, Valid Loss: 2.4527
-Epoch [3/5], Step [2100/3236], Loss: 2.3429, Perplexity: 10.4115, Valid Loss: 2.4361
-Epoch [3/5], Step [2200/3236], Loss: 2.3164, Perplexity: 10.1396, Valid Loss: 2.4402
-Epoch [3/5], Step [2300/3236], Loss: 2.3275, Perplexity: 10.2524, Valid Loss: 2.4728
-Epoch [3/5], Step [2400/3236], Loss: 2.3316, Perplexity: 10.2941, Valid Loss: 2.4446
-Epoch [3/5], Step [2500/3236], Loss: 2.3433, Perplexity: 10.4154, Valid Loss: 2.4392
-Epoch [3/5], Step [2600/3236], Loss: 2.3191, Perplexity: 10.1663, Valid Loss: 2.4195
-Epoch [3/5], Step [2700/3236], Loss: 2.3409, Perplexity: 10.3911, Valid Loss: 2.3836
-Epoch [3/5], Step [2800/3236], Loss: 2.3313, Perplexity: 10.2912, Valid Loss: 2.4234
-Epoch [3/5], Step [2900/3236], Loss: 2.3182, Perplexity: 10.1572, Valid Loss: 2.4066
-Epoch [3/5], Step [3000/3236], Loss: 2.2902, Perplexity: 9.8772, Valid Loss: 2.3883
-Epoch [3/5], Step [3100/3236], Loss: 2.2978, Perplexity: 9.9519, Valid Loss: 2.3527
-Epoch [3/5], Step [3200/3236], Loss: 2.2904, Perplexity: 9.8789, Valid Loss: 2.4225
-Epoch [4/5], Step [100/3236], Loss: 2.3569, Perplexity: 10.5582, Valid Loss: 2.4063
-Epoch [4/5], Step [200/3236], Loss: 2.3192, Perplexity: 10.1679, Valid Loss: 2.4037
-Epoch [4/5], Step [300/3236], Loss: 2.2726, Perplexity: 9.7046, Valid Loss: 2.3959
-Epoch [4/5], Step [400/3236], Loss: 2.2899, Perplexity: 9.8735, Valid Loss: 2.4259
-Epoch [4/5], Step [500/3236], Loss: 2.2670, Perplexity: 9.6507, Valid Loss: 2.4184
-Epoch [4/5], Step [600/3236], Loss: 2.3218, Perplexity: 10.1940, Valid Loss: 2.3761
-Epoch [4/5], Step [700/3236], Loss: 2.3068, Perplexity: 10.0421, Valid Loss: 2.3655
-Epoch [4/5], Step [800/3236], Loss: 2.2870, Perplexity: 9.8458, Valid Loss: 2.4194
-Epoch [4/5], Step [900/3236], Loss: 2.2818, Perplexity: 9.7942, Valid Loss: 2.4320
-Epoch [4/5], Step [1000/3236], Loss: 2.2603, Perplexity: 9.5861, Valid Loss: 2.4079
-Epoch [4/5], Step [1100/3236], Loss: 2.2754, Perplexity: 9.7317, Valid Loss: 2.4155
-Epoch [4/5], Step [1200/3236], Loss: 2.2736, Perplexity: 9.7145, Valid Loss: 2.3926
-Epoch [4/5], Step [1300/3236], Loss: 2.2595, Perplexity: 9.5785, Valid Loss: 2.4351
-Epoch [4/5], Step [1400/3236], Loss: 2.2656, Perplexity: 9.6365, Valid Loss: 2.3638
-Epoch [4/5], Step [1500/3236], Loss: 2.2587, Perplexity: 9.5702, Valid Loss: 2.3502
-Epoch [4/5], Step [1600/3236], Loss: 2.2561, Perplexity: 9.5453, Valid Loss: 2.3587
-Epoch [4/5], Step [1700/3236], Loss: 2.2178, Perplexity: 9.1875, Valid Loss: 2.3440
-Epoch [4/5], Step [1800/3236], Loss: 2.2661, Perplexity: 9.6422, Valid Loss: 2.3585
-Epoch [4/5], Step [1900/3236], Loss: 2.2849, Perplexity: 9.8250, Valid Loss: 2.3607
-Epoch [4/5], Step [2000/3236], Loss: 2.2257, Perplexity: 9.2600, Valid Loss: 2.3619
-Epoch [4/5], Step [2100/3236], Loss: 2.2668, Perplexity: 9.6482, Valid Loss: 2.4168
-Epoch [4/5], Step [2200/3236], Loss: 2.2769, Perplexity: 9.7461, Valid Loss: 2.3735
-Epoch [4/5], Step [2300/3236], Loss: 2.2554, Perplexity: 9.5390, Valid Loss: 2.3415
-Epoch [4/5], Step [2400/3236], Loss: 2.2313, Perplexity: 9.3116, Valid Loss: 2.3540
-Epoch [4/5], Step [2500/3236], Loss: 2.2728, Perplexity: 9.7064, Valid Loss: 2.3858
-Epoch [4/5], Step [2600/3236], Loss: 2.2433, Perplexity: 9.4241, Valid Loss: 2.3438
-Epoch [4/5], Step [2700/3236], Loss: 2.2364, Perplexity: 9.3600, Valid Loss: 2.3645
-Epoch [4/5], Step [2800/3236], Loss: 2.2726, Perplexity: 9.7047, Valid Loss: 2.3780
-Epoch [4/5], Step [2900/3236], Loss: 2.2424, Perplexity: 9.4159, Valid Loss: 2.3418
-Epoch [4/5], Step [3000/3236], Loss: 2.2312, Perplexity: 9.3108, Valid Loss: 2.3544
-Epoch [4/5], Step [3100/3236], Loss: 2.1857, Perplexity: 8.8969, Valid Loss: 2.3710
-Epoch [4/5], Step [3200/3236], Loss: 2.2123, Perplexity: 9.1366, Valid Loss: 2.3448
-Epoch [5/5], Step [100/3236], Loss: 2.2418, Perplexity: 9.4099, Valid Loss: 2.3571
-Epoch [5/5], Step [200/3236], Loss: 2.2124, Perplexity: 9.1375, Valid Loss: 2.3380
-Epoch [5/5], Step [300/3236], Loss: 2.2203, Perplexity: 9.2104, Valid Loss: 2.3534
-Epoch [5/5], Step [400/3236], Loss: 2.2220, Perplexity: 9.2256, Valid Loss: 2.3497
-Epoch [5/5], Step [500/3236], Loss: 2.2223, Perplexity: 9.2282, Valid Loss: 2.3034
-Epoch [5/5], Step [600/3236], Loss: 2.2248, Perplexity: 9.2514, Valid Loss: 2.3522
-Epoch [5/5], Step [700/3236], Loss: 2.2096, Perplexity: 9.1120, Valid Loss: 2.3336
-Epoch [5/5], Step [800/3236], Loss: 2.2482, Perplexity: 9.4704, Valid Loss: 2.3490
-Epoch [5/5], Step [900/3236], Loss: 2.2076, Perplexity: 9.0942, Valid Loss: 2.3132
-Epoch [5/5], Step [1000/3236], Loss: 2.2058, Perplexity: 9.0771, Valid Loss: 2.3071
-Epoch [5/5], Step [1100/3236], Loss: 2.1784, Perplexity: 8.8320, Valid Loss: 2.3344
-Epoch [5/5], Step [1200/3236], Loss: 2.1982, Perplexity: 9.0089, Valid Loss: 2.3361
-Epoch [5/5], Step [1300/3236], Loss: 2.1916, Perplexity: 8.9493, Valid Loss: 2.2995
-Epoch [5/5], Step [1400/3236], Loss: 2.1982, Perplexity: 9.0086, Valid Loss: 2.3059
-Epoch [5/5], Step [1500/3236], Loss: 2.2021, Perplexity: 9.0444, Valid Loss: 2.3518
-Epoch [5/5], Step [1600/3236], Loss: 2.1959, Perplexity: 8.9882, Valid Loss: 2.3333
-Epoch [5/5], Step [1700/3236], Loss: 2.1720, Perplexity: 8.7761, Valid Loss: 2.3211
-Epoch [5/5], Step [1800/3236], Loss: 2.1938, Perplexity: 8.9695, Valid Loss: 2.3038
-Epoch [5/5], Step [1900/3236], Loss: 2.1625, Perplexity: 8.6924, Valid Loss: 2.3246
-Epoch [5/5], Step [2000/3236], Loss: 2.2094, Perplexity: 9.1098, Valid Loss: 2.3614
-Epoch [5/5], Step [2100/3236], Loss: 2.2156, Perplexity: 9.1670, Valid Loss: 2.3962
-Epoch [5/5], Step [2200/3236], Loss: 2.1826, Perplexity: 8.8696, Valid Loss: 2.2971
-Epoch [5/5], Step [2300/3236], Loss: 2.1729, Perplexity: 8.7835, Valid Loss: 2.3046
-Epoch [5/5], Step [2400/3236], Loss: 2.1766, Perplexity: 8.8162, Valid Loss: 2.3093
-Epoch [5/5], Step [2500/3236], Loss: 2.2021, Perplexity: 9.0436, Valid Loss: 2.2938
-Epoch [5/5], Step [2600/3236], Loss: 2.1990, Perplexity: 9.0161, Valid Loss: 2.3849
-Epoch [5/5], Step [2700/3236], Loss: 2.1537, Perplexity: 8.6164, Valid Loss: 2.3210
-Epoch [5/5], Step [2800/3236], Loss: 2.1856, Perplexity: 8.8956, Valid Loss: 2.2968
-Epoch [5/5], Step [2900/3236], Loss: 2.1790, Perplexity: 8.8371, Valid Loss: 2.3327
-Epoch [5/5], Step [3000/3236], Loss: 2.1968, Perplexity: 8.9965, Valid Loss: 2.3194
-Epoch [5/5], Step [3100/3236], Loss: 2.1848, Perplexity: 8.8891, Valid Loss: 2.3175
-Epoch [5/5], Step [3200/3236], Loss: 2.1730, Perplexity: 8.7846, Valid Loss: 2.3453
+[2020-06-02 21:42:51] Epoch [1/20], Step [100/1618], Loss: 5.2310, Perplexity: 186.9770, Valid Loss: 4.7678
+[2020-06-02 22:00:08] Epoch [1/20], Step [200/1618], Loss: 4.5403, Perplexity: 93.7155, Valid Loss: 4.3713
+[2020-06-02 22:17:19] Epoch [1/20], Step [300/1618], Loss: 4.1881, Perplexity: 65.8951, Valid Loss: 4.0395
+[2020-06-02 22:33:51] Epoch [1/20], Step [400/1618], Loss: 3.9298, Perplexity: 50.8981, Valid Loss: 3.8828
+[2020-06-02 22:50:26] Epoch [1/20], Step [500/1618], Loss: 3.7322, Perplexity: 41.7695, Valid Loss: 3.7206
+[2020-06-02 23:06:39] Epoch [1/20], Step [600/1618], Loss: 3.6571, Perplexity: 38.7481, Valid Loss: 3.6302
+[2020-06-02 23:22:34] Epoch [1/20], Step [700/1618], Loss: 3.6041, Perplexity: 36.7469, Valid Loss: 3.5692
+[2020-06-02 23:38:41] Epoch [1/20], Step [800/1618], Loss: 3.4962, Perplexity: 32.9900, Valid Loss: 3.5131
+[2020-06-02 23:54:44] Epoch [1/20], Step [900/1618], Loss: 3.4202, Perplexity: 30.5746, Valid Loss: 3.4880
+[2020-06-03 00:10:50] Epoch [1/20], Step [1000/1618], Loss: 3.4306, Perplexity: 30.8942, Valid Loss: 3.3993
+[2020-06-03 00:26:59] Epoch [1/20], Step [1100/1618], Loss: 3.3340, Perplexity: 28.0511, Valid Loss: 3.3547
+[2020-06-03 00:43:11] Epoch [1/20], Step [1200/1618], Loss: 3.2619, Perplexity: 26.1000, Valid Loss: 3.2845
+[2020-06-03 00:59:12] Epoch [1/20], Step [1300/1618], Loss: 3.2823, Perplexity: 26.6378, Valid Loss: 3.2453
+[2020-06-03 01:14:36] Epoch [1/20], Step [1400/1618], Loss: 3.1711, Perplexity: 23.8341, Valid Loss: 3.1880
+[2020-06-03 01:29:36] Epoch [1/20], Step [1500/1618], Loss: 3.1282, Perplexity: 22.8335, Valid Loss: 3.1341
+[2020-06-03 01:44:22] Epoch [1/20], Step [1600/1618], Loss: 3.0831, Perplexity: 21.8251, Valid Loss: 3.0842
+[2020-06-03 02:01:59] Epoch [2/20], Step [100/1618], Loss: 2.9946, Perplexity: 19.9778, Valid Loss: 3.0573
+[2020-06-03 02:16:25] Epoch [2/20], Step [200/1618], Loss: 2.9288, Perplexity: 18.7049, Valid Loss: 3.0231
+[2020-06-03 02:30:49] Epoch [2/20], Step [300/1618], Loss: 2.9223, Perplexity: 18.5837, Valid Loss: 3.0042
+[2020-06-03 02:44:58] Epoch [2/20], Step [400/1618], Loss: 2.8977, Perplexity: 18.1331, Valid Loss: 2.9058
+[2020-06-03 02:59:10] Epoch [2/20], Step [500/1618], Loss: 2.8988, Perplexity: 18.1525, Valid Loss: 2.9073
+[2020-06-03 03:13:10] Epoch [2/20], Step [600/1618], Loss: 2.8678, Perplexity: 17.5978, Valid Loss: 2.9014
+[2020-06-03 03:27:46] Epoch [2/20], Step [700/1618], Loss: 2.7856, Perplexity: 16.2099, Valid Loss: 2.8564
+[2020-06-03 03:42:24] Epoch [2/20], Step [800/1618], Loss: 2.7526, Perplexity: 15.6835, Valid Loss: 2.8419
+[2020-06-03 03:56:46] Epoch [2/20], Step [900/1618], Loss: 2.7796, Perplexity: 16.1118, Valid Loss: 2.8447
+[2020-06-03 04:10:03] Epoch [2/20], Step [1000/1618], Loss: 2.7396, Perplexity: 15.4810, Valid Loss: 2.8136
+[2020-06-03 04:23:30] Epoch [2/20], Step [1100/1618], Loss: 2.7204, Perplexity: 15.1868, Valid Loss: 2.8048
+[2020-06-03 04:37:08] Epoch [2/20], Step [1200/1618], Loss: 2.7245, Perplexity: 15.2483, Valid Loss: 2.7739
+[2020-06-03 04:51:02] Epoch [2/20], Step [1300/1618], Loss: 2.7236, Perplexity: 15.2352, Valid Loss: 2.7837
+[2020-06-03 05:04:39] Epoch [2/20], Step [1400/1618], Loss: 2.6793, Perplexity: 14.5743, Valid Loss: 2.7788
+[2020-06-03 05:17:57] Epoch [2/20], Step [1500/1618], Loss: 2.6510, Perplexity: 14.1676, Valid Loss: 2.7283
+[2020-06-03 05:31:25] Epoch [2/20], Step [1600/1618], Loss: 2.6162, Perplexity: 13.6830, Valid Loss: 2.7340
+[2020-06-03 05:46:51] Epoch [3/20], Step [100/1618], Loss: 2.6377, Perplexity: 13.9817, Valid Loss: 2.7617
+[2020-06-03 05:59:27] Epoch [3/20], Step [200/1618], Loss: 2.6572, Perplexity: 14.2565, Valid Loss: 2.7431
+[2020-06-03 06:12:08] Epoch [3/20], Step [300/1618], Loss: 2.6440, Perplexity: 14.0697, Valid Loss: 2.6854
+[2020-06-03 06:25:01] Epoch [3/20], Step [400/1618], Loss: 2.6481, Perplexity: 14.1269, Valid Loss: 2.6712
+[2020-06-03 06:38:19] Epoch [3/20], Step [500/1618], Loss: 2.6441, Perplexity: 14.0713, Valid Loss: 2.6679
+[2020-06-03 06:51:28] Epoch [3/20], Step [600/1618], Loss: 2.5823, Perplexity: 13.2270, Valid Loss: 2.6678
+[2020-06-03 07:04:44] Epoch [3/20], Step [700/1618], Loss: 2.5406, Perplexity: 12.6877, Valid Loss: 2.6466
+[2020-06-03 07:17:52] Epoch [3/20], Step [800/1618], Loss: 2.5637, Perplexity: 12.9843, Valid Loss: 2.6834
+[2020-06-03 07:30:24] Epoch [3/20], Step [900/1618], Loss: 2.5707, Perplexity: 13.0749, Valid Loss: 2.6496
+[2020-06-03 07:42:57] Epoch [3/20], Step [1000/1618], Loss: 2.5474, Perplexity: 12.7738, Valid Loss: 2.6717
+[2020-06-03 07:55:41] Epoch [3/20], Step [1100/1618], Loss: 2.5490, Perplexity: 12.7944, Valid Loss: 2.6686
+[2020-06-03 08:08:26] Epoch [3/20], Step [1200/1618], Loss: 2.5280, Perplexity: 12.5285, Valid Loss: 2.6084
+[2020-06-03 08:21:39] Epoch [3/20], Step [1300/1618], Loss: 2.5227, Perplexity: 12.4621, Valid Loss: 2.6244
+[2020-06-03 08:34:48] Epoch [3/20], Step [1400/1618], Loss: 2.5235, Perplexity: 12.4716, Valid Loss: 2.6385
+[2020-06-03 08:47:41] Epoch [3/20], Step [1500/1618], Loss: 2.5023, Perplexity: 12.2104, Valid Loss: 2.5687
+[2020-06-03 09:01:10] Epoch [3/20], Step [1600/1618], Loss: 2.5120, Perplexity: 12.3294, Valid Loss: 2.6089
+[2020-06-03 09:18:01] Epoch [4/20], Step [100/1618], Loss: 2.5158, Perplexity: 12.3768, Valid Loss: 2.5804
+[2020-06-03 09:31:36] Epoch [4/20], Step [200/1618], Loss: 2.5106, Perplexity: 12.3127, Valid Loss: 2.6374
+[2020-06-03 09:45:02] Epoch [4/20], Step [300/1618], Loss: 2.4963, Perplexity: 12.1376, Valid Loss: 2.5629
+[2020-06-03 09:59:02] Epoch [4/20], Step [400/1618], Loss: 2.4904, Perplexity: 12.0660, Valid Loss: 2.5759
+[2020-06-03 10:12:24] Epoch [4/20], Step [500/1618], Loss: 2.4904, Perplexity: 12.0658, Valid Loss: 2.5666
+[2020-06-03 10:25:24] Epoch [4/20], Step [600/1618], Loss: 2.4944, Perplexity: 12.1140, Valid Loss: 2.5945
+[2020-06-03 10:38:37] Epoch [4/20], Step [700/1618], Loss: 2.4633, Perplexity: 11.7434, Valid Loss: 2.5645
+[2020-06-03 10:51:40] Epoch [4/20], Step [800/1618], Loss: 2.4871, Perplexity: 12.0260, Valid Loss: 2.5470
+[2020-06-03 11:05:16] Epoch [4/20], Step [900/1618], Loss: 2.4425, Perplexity: 11.5013, Valid Loss: 2.5473
+[2020-06-03 11:18:24] Epoch [4/20], Step [1000/1618], Loss: 2.4784, Perplexity: 11.9216, Valid Loss: 2.5539
+[2020-06-03 11:31:22] Epoch [4/20], Step [1100/1618], Loss: 2.4626, Perplexity: 11.7355, Valid Loss: 2.5316
+[2020-06-03 11:45:17] Epoch [4/20], Step [1200/1618], Loss: 2.4434, Perplexity: 11.5123, Valid Loss: 2.5865
+[2020-06-03 11:58:23] Epoch [4/20], Step [1300/1618], Loss: 2.4274, Perplexity: 11.3292, Valid Loss: 2.5460
+[2020-06-03 12:11:37] Epoch [4/20], Step [1400/1618], Loss: 2.4060, Perplexity: 11.0894, Valid Loss: 2.5209
+[2020-06-03 12:24:55] Epoch [4/20], Step [1500/1618], Loss: 2.4565, Perplexity: 11.6640, Valid Loss: 2.5461
+[2020-06-03 12:37:59] Epoch [4/20], Step [1600/1618], Loss: 2.4492, Perplexity: 11.5790, Valid Loss: 2.5108
+[2020-06-03 12:54:57] Epoch [5/20], Step [100/1618], Loss: 2.4513, Perplexity: 11.6029, Valid Loss: 2.5419
+[2020-06-03 13:08:51] Epoch [5/20], Step [200/1618], Loss: 2.4556, Perplexity: 11.6537, Valid Loss: 2.5375
+[2020-06-03 13:22:02] Epoch [5/20], Step [300/1618], Loss: 2.4094, Perplexity: 11.1269, Valid Loss: 2.5179
+[2020-06-03 13:35:06] Epoch [5/20], Step [400/1618], Loss: 2.4479, Perplexity: 11.5638, Valid Loss: 2.4883
+[2020-06-03 13:48:58] Epoch [5/20], Step [500/1618], Loss: 2.4197, Perplexity: 11.2423, Valid Loss: 2.5314
+[2020-06-03 14:03:05] Epoch [5/20], Step [600/1618], Loss: 2.3932, Perplexity: 10.9480, Valid Loss: 2.4971
+[2020-06-03 14:17:18] Epoch [5/20], Step [700/1618], Loss: 2.4222, Perplexity: 11.2705, Valid Loss: 2.4743
+[2020-06-03 14:32:35] Epoch [5/20], Step [800/1618], Loss: 2.3837, Perplexity: 10.8445, Valid Loss: 2.5289
+[2020-06-03 14:48:09] Epoch [5/20], Step [900/1618], Loss: 2.4710, Perplexity: 11.8343, Valid Loss: 2.5114
+[2020-06-03 15:02:59] Epoch [5/20], Step [1000/1618], Loss: 2.4185, Perplexity: 11.2292, Valid Loss: 2.4893
+[2020-06-03 15:16:39] Epoch [5/20], Step [1100/1618], Loss: 2.3666, Perplexity: 10.6606, Valid Loss: 2.5019
+[2020-06-03 15:30:12] Epoch [5/20], Step [1200/1618], Loss: 2.3819, Perplexity: 10.8259, Valid Loss: 2.4921
+[2020-06-03 15:43:31] Epoch [5/20], Step [1300/1618], Loss: 2.4075, Perplexity: 11.1057, Valid Loss: 2.4840
+[2020-06-03 15:57:35] Epoch [5/20], Step [1400/1618], Loss: 2.4281, Perplexity: 11.3369, Valid Loss: 2.4938
+[2020-06-03 16:11:12] Epoch [5/20], Step [1500/1618], Loss: 2.3703, Perplexity: 10.7011, Valid Loss: 2.4859
+[2020-06-03 16:24:42] Epoch [5/20], Step [1600/1618], Loss: 2.3959, Perplexity: 10.9784, Valid Loss: 2.4652
+[2020-06-03 16:41:21] Epoch [6/20], Step [100/1618], Loss: 2.3685, Perplexity: 10.6813, Valid Loss: 2.4755
+[2020-06-03 16:55:42] Epoch [6/20], Step [200/1618], Loss: 2.3587, Perplexity: 10.5772, Valid Loss: 2.4979
+[2020-06-03 17:09:51] Epoch [6/20], Step [300/1618], Loss: 2.3593, Perplexity: 10.5834, Valid Loss: 2.4686
+[2020-06-03 17:23:51] Epoch [6/20], Step [400/1618], Loss: 2.3869, Perplexity: 10.8797, Valid Loss: 2.4562
+[2020-06-03 17:37:49] Epoch [6/20], Step [500/1618], Loss: 2.3468, Perplexity: 10.4519, Valid Loss: 2.4769
+[2020-06-03 17:51:46] Epoch [6/20], Step [600/1618], Loss: 2.3382, Perplexity: 10.3623, Valid Loss: 2.5038
+[2020-06-03 18:05:33] Epoch [6/20], Step [700/1618], Loss: 2.3456, Perplexity: 10.4395, Valid Loss: 2.4747
+[2020-06-03 18:18:39] Epoch [6/20], Step [800/1618], Loss: 2.3550, Perplexity: 10.5381, Valid Loss: 2.4871
+[2020-06-03 18:31:38] Epoch [6/20], Step [900/1618], Loss: 2.3732, Perplexity: 10.7320, Valid Loss: 2.4596
+[2020-06-03 18:44:43] Epoch [6/20], Step [1000/1618], Loss: 2.4064, Perplexity: 11.0938, Valid Loss: 2.4961
+[2020-06-03 18:57:41] Epoch [6/20], Step [1100/1618], Loss: 2.3791, Perplexity: 10.7950, Valid Loss: 2.4678
+[2020-06-03 19:10:29] Epoch [6/20], Step [1200/1618], Loss: 2.3473, Perplexity: 10.4574, Valid Loss: 2.4604
+[2020-06-03 19:23:14] Epoch [6/20], Step [1300/1618], Loss: 2.3655, Perplexity: 10.6489, Valid Loss: 2.4359
+[2020-06-03 19:36:38] Epoch [6/20], Step [1400/1618], Loss: 2.3248, Perplexity: 10.2245, Valid Loss: 2.4508
+[2020-06-03 19:50:00] Epoch [6/20], Step [1500/1618], Loss: 2.3264, Perplexity: 10.2415, Valid Loss: 2.4366
+[2020-06-03 20:03:27] Epoch [6/20], Step [1600/1618], Loss: 2.3240, Perplexity: 10.2168, Valid Loss: 2.4322
+[2020-06-03 20:21:04] Epoch [7/20], Step [100/1618], Loss: 2.3084, Perplexity: 10.0579, Valid Loss: 2.5018
+[2020-06-03 20:36:29] Epoch [7/20], Step [200/1618], Loss: 2.3244, Perplexity: 10.2206, Valid Loss: 2.4568
+[2020-06-03 20:52:01] Epoch [7/20], Step [300/1618], Loss: 2.3155, Perplexity: 10.1296, Valid Loss: 2.4353
+[2020-06-03 21:06:19] Epoch [7/20], Step [400/1618], Loss: 2.3272, Perplexity: 10.2491, Valid Loss: 2.4659
+[2020-06-03 21:20:20] Epoch [7/20], Step [500/1618], Loss: 2.3173, Perplexity: 10.1483, Valid Loss: 2.4846
+[2020-06-03 21:34:04] Epoch [7/20], Step [600/1618], Loss: 2.3020, Perplexity: 9.9937, Valid Loss: 2.4763
+[2020-06-03 21:48:00] Epoch [7/20], Step [700/1618], Loss: 2.3467, Perplexity: 10.4515, Valid Loss: 2.4580
+[2020-06-03 22:02:14] Epoch [7/20], Step [800/1618], Loss: 2.3387, Perplexity: 10.3678, Valid Loss: 2.4297
+[2020-06-03 22:16:38] Epoch [7/20], Step [900/1618], Loss: 2.3072, Perplexity: 10.0467, Valid Loss: 2.4550
+[2020-06-03 22:31:06] Epoch [7/20], Step [1000/1618], Loss: 2.3190, Perplexity: 10.1655, Valid Loss: 2.4427
+[2020-06-03 22:45:15] Epoch [7/20], Step [1100/1618], Loss: 2.3226, Perplexity: 10.2022, Valid Loss: 2.4378
+[2020-06-03 22:58:42] Epoch [7/20], Step [1200/1618], Loss: 2.3144, Perplexity: 10.1191, Valid Loss: 2.4534
+[2020-06-03 23:12:17] Epoch [7/20], Step [1300/1618], Loss: 2.2884, Perplexity: 9.8591, Valid Loss: 2.4369
+[2020-06-03 23:25:35] Epoch [7/20], Step [1400/1618], Loss: 2.2881, Perplexity: 9.8560, Valid Loss: 2.4504
+[2020-06-03 23:38:43] Epoch [7/20], Step [1500/1618], Loss: 2.2944, Perplexity: 9.9189, Valid Loss: 2.4669
+[2020-06-03 23:52:04] Epoch [7/20], Step [1600/1618], Loss: 2.3224, Perplexity: 10.1997, Valid Loss: 2.4401
+[2020-06-04 00:08:08] Epoch [8/20], Step [100/1618], Loss: 2.3062, Perplexity: 10.0363, Valid Loss: 2.4518
+[2020-06-04 00:21:47] Epoch [8/20], Step [200/1618], Loss: 2.3482, Perplexity: 10.4670, Valid Loss: 2.4216
+[2020-06-04 00:35:53] Epoch [8/20], Step [300/1618], Loss: 2.3340, Perplexity: 10.3192, Valid Loss: 2.4412
+[2020-06-04 00:49:47] Epoch [8/20], Step [400/1618], Loss: 2.3268, Perplexity: 10.2454, Valid Loss: 2.4554
+[2020-06-04 01:03:49] Epoch [8/20], Step [500/1618], Loss: 2.3071, Perplexity: 10.0454, Valid Loss: 2.4363
+[2020-06-04 01:17:22] Epoch [8/20], Step [600/1618], Loss: 2.2611, Perplexity: 9.5938, Valid Loss: 2.4458
+[2020-06-04 01:30:54] Epoch [8/20], Step [700/1618], Loss: 2.2740, Perplexity: 9.7181, Valid Loss: 2.4241
+[2020-06-04 01:44:29] Epoch [8/20], Step [800/1618], Loss: 2.3013, Perplexity: 9.9872, Valid Loss: 2.4543
+[2020-06-04 01:58:07] Epoch [8/20], Step [900/1618], Loss: 2.2865, Perplexity: 9.8401, Valid Loss: 2.4364
+[2020-06-04 02:11:41] Epoch [8/20], Step [1000/1618], Loss: 2.2949, Perplexity: 9.9230, Valid Loss: 2.4330
+[2020-06-04 02:25:28] Epoch [8/20], Step [1100/1618], Loss: 2.3044, Perplexity: 10.0186, Valid Loss: 2.4191
+[2020-06-04 02:40:12] Epoch [8/20], Step [1200/1618], Loss: 2.2858, Perplexity: 9.8334, Valid Loss: 2.4689
+[2020-06-04 02:54:26] Epoch [8/20], Step [1300/1618], Loss: 2.2760, Perplexity: 9.7378, Valid Loss: 2.4058
+[2020-06-04 03:09:07] Epoch [8/20], Step [1400/1618], Loss: 2.3257, Perplexity: 10.2335, Valid Loss: 2.4438
+[2020-06-04 03:23:22] Epoch [8/20], Step [1500/1618], Loss: 2.2899, Perplexity: 9.8738, Valid Loss: 2.4211
+[2020-06-04 03:38:16] Epoch [8/20], Step [1600/1618], Loss: 2.3056, Perplexity: 10.0306, Valid Loss: 2.4318
+[2020-06-04 03:55:55] Epoch [9/20], Step [100/1618], Loss: 2.3015, Perplexity: 9.9893, Valid Loss: 2.4292
+[2020-06-04 04:11:00] Epoch [9/20], Step [200/1618], Loss: 2.2988, Perplexity: 9.9623, Valid Loss: 2.4195
+[2020-06-04 04:25:24] Epoch [9/20], Step [300/1618], Loss: 2.2750, Perplexity: 9.7281, Valid Loss: 2.4206
+[2020-06-04 04:38:54] Epoch [9/20], Step [400/1618], Loss: 2.2907, Perplexity: 9.8821, Valid Loss: 2.4286
+[2020-06-04 04:52:24] Epoch [9/20], Step [500/1618], Loss: 2.2663, Perplexity: 9.6435, Valid Loss: 2.4110
+[2020-06-04 05:06:13] Epoch [9/20], Step [600/1618], Loss: 2.2633, Perplexity: 9.6149, Valid Loss: 2.4242
+[2020-06-04 05:19:35] Epoch [9/20], Step [700/1618], Loss: 2.2605, Perplexity: 9.5877, Valid Loss: 2.4399
+[2020-06-04 05:32:50] Epoch [9/20], Step [800/1618], Loss: 2.2707, Perplexity: 9.6864, Valid Loss: 2.4097
+[2020-06-04 05:45:59] Epoch [9/20], Step [900/1618], Loss: 2.2638, Perplexity: 9.6198, Valid Loss: 2.4010
+[2020-06-04 05:59:26] Epoch [9/20], Step [1000/1618], Loss: 2.2748, Perplexity: 9.7256, Valid Loss: 2.4365
+[2020-06-04 06:13:07] Epoch [9/20], Step [1100/1618], Loss: 2.2629, Perplexity: 9.6106, Valid Loss: 2.3880
+[2020-06-04 06:26:48] Epoch [9/20], Step [1200/1618], Loss: 2.2913, Perplexity: 9.8879, Valid Loss: 2.3977
+[2020-06-04 06:40:16] Epoch [9/20], Step [1300/1618], Loss: 2.2774, Perplexity: 9.7515, Valid Loss: 2.4116
+[2020-06-04 06:53:30] Epoch [9/20], Step [1400/1618], Loss: 2.2882, Perplexity: 9.8574, Valid Loss: 2.4237
+[2020-06-04 07:06:44] Epoch [9/20], Step [1500/1618], Loss: 2.2770, Perplexity: 9.7472, Valid Loss: 2.4142
+[2020-06-04 07:19:53] Epoch [9/20], Step [1600/1618], Loss: 2.3101, Perplexity: 10.0752, Valid Loss: 2.4171
+[2020-06-04 07:35:59] Epoch [10/20], Step [100/1618], Loss: 2.2394, Perplexity: 9.3877, Valid Loss: 2.4430
+[2020-06-04 07:49:35] Epoch [10/20], Step [200/1618], Loss: 2.2442, Perplexity: 9.4324, Valid Loss: 2.4333
+[2020-06-04 08:03:20] Epoch [10/20], Step [300/1618], Loss: 2.2759, Perplexity: 9.7370, Valid Loss: 2.4577
+[2020-06-04 08:16:32] Epoch [10/20], Step [400/1618], Loss: 2.2795, Perplexity: 9.7716, Valid Loss: 2.4425
+[2020-06-04 08:29:37] Epoch [10/20], Step [500/1618], Loss: 2.2879, Perplexity: 9.8538, Valid Loss: 2.4040
+[2020-06-04 08:43:21] Epoch [10/20], Step [600/1618], Loss: 2.2553, Perplexity: 9.5381, Valid Loss: 2.4067
+[2020-06-04 08:56:39] Epoch [10/20], Step [700/1618], Loss: 2.2812, Perplexity: 9.7887, Valid Loss: 2.3868
+[2020-06-04 09:10:41] Epoch [10/20], Step [800/1618], Loss: 2.2587, Perplexity: 9.5706, Valid Loss: 2.3819
+[2020-06-04 09:25:13] Epoch [10/20], Step [900/1618], Loss: 2.2582, Perplexity: 9.5662, Valid Loss: 2.4203
+[2020-06-04 09:39:48] Epoch [10/20], Step [1000/1618], Loss: 2.2356, Perplexity: 9.3519, Valid Loss: 2.3913
+[2020-06-04 09:54:04] Epoch [10/20], Step [1100/1618], Loss: 2.2782, Perplexity: 9.7588, Valid Loss: 2.4063
+[2020-06-04 10:07:32] Epoch [10/20], Step [1200/1618], Loss: 2.2628, Perplexity: 9.6103, Valid Loss: 2.3830
+[2020-06-04 10:21:12] Epoch [10/20], Step [1300/1618], Loss: 2.2224, Perplexity: 9.2291, Valid Loss: 2.3854
+[2020-06-04 10:34:31] Epoch [10/20], Step [1400/1618], Loss: 2.2669, Perplexity: 9.6493, Valid Loss: 2.3916
+[2020-06-04 10:48:02] Epoch [10/20], Step [1500/1618], Loss: 2.2232, Perplexity: 9.2372, Valid Loss: 2.3906
+[2020-06-04 11:01:12] Epoch [10/20], Step [1600/1618], Loss: 2.2694, Perplexity: 9.6735, Valid Loss: 2.3914
+[2020-06-04 11:17:33] Epoch [11/20], Step [100/1618], Loss: 2.2627, Perplexity: 9.6085, Valid Loss: 2.4176
+[2020-06-04 11:31:53] Epoch [11/20], Step [200/1618], Loss: 2.2068, Perplexity: 9.0864, Valid Loss: 2.4312
+[2020-06-04 11:46:22] Epoch [11/20], Step [300/1618], Loss: 2.2346, Perplexity: 9.3431, Valid Loss: 2.3945
+[2020-06-04 12:00:01] Epoch [11/20], Step [400/1618], Loss: 2.2396, Perplexity: 9.3900, Valid Loss: 2.4147
+[2020-06-04 12:13:14] Epoch [11/20], Step [500/1618], Loss: 2.2347, Perplexity: 9.3441, Valid Loss: 2.4055
+[2020-06-04 12:26:37] Epoch [11/20], Step [600/1618], Loss: 2.2457, Perplexity: 9.4467, Valid Loss: 2.4147
+[2020-06-04 12:39:56] Epoch [11/20], Step [700/1618], Loss: 2.2389, Perplexity: 9.3833, Valid Loss: 2.4024
+[2020-06-04 12:53:35] Epoch [11/20], Step [800/1618], Loss: 2.2535, Perplexity: 9.5211, Valid Loss: 2.3773
+[2020-06-04 13:08:04] Epoch [11/20], Step [900/1618], Loss: 2.2536, Perplexity: 9.5222, Valid Loss: 2.4052
+[2020-06-04 13:22:45] Epoch [11/20], Step [1000/1618], Loss: 2.2751, Perplexity: 9.7285, Valid Loss: 2.4035
+[2020-06-04 13:37:19] Epoch [11/20], Step [1100/1618], Loss: 2.2423, Perplexity: 9.4150, Valid Loss: 2.4022
+[2020-06-04 13:51:40] Epoch [11/20], Step [1200/1618], Loss: 2.2293, Perplexity: 9.2931, Valid Loss: 2.4004
+[2020-06-04 14:05:55] Epoch [11/20], Step [1300/1618], Loss: 2.2668, Perplexity: 9.6482, Valid Loss: 2.4036
+[2020-06-04 14:19:32] Epoch [11/20], Step [1400/1618], Loss: 2.2464, Perplexity: 9.4540, Valid Loss: 2.3936
+[2020-06-04 14:32:42] Epoch [11/20], Step [1500/1618], Loss: 2.2079, Perplexity: 9.0970, Valid Loss: 2.3886
+[2020-06-04 14:46:06] Epoch [11/20], Step [1600/1618], Loss: 2.2644, Perplexity: 9.6252, Valid Loss: 2.4008
+[2020-06-04 15:02:29] Epoch [12/20], Step [100/1618], Loss: 2.2333, Perplexity: 9.3304, Valid Loss: 2.3787
+[2020-06-04 15:16:05] Epoch [12/20], Step [200/1618], Loss: 2.2816, Perplexity: 9.7921, Valid Loss: 2.4007
+[2020-06-04 15:29:31] Epoch [12/20], Step [300/1618], Loss: 2.2454, Perplexity: 9.4443, Valid Loss: 2.4012
+[2020-06-04 15:43:22] Epoch [12/20], Step [400/1618], Loss: 2.2495, Perplexity: 9.4826, Valid Loss: 2.3986
+[2020-06-04 15:57:00] Epoch [12/20], Step [500/1618], Loss: 2.2297, Perplexity: 9.2972, Valid Loss: 2.3909
+[2020-06-04 16:10:37] Epoch [12/20], Step [600/1618], Loss: 2.2473, Perplexity: 9.4619, Valid Loss: 2.4182
+[2020-06-04 16:23:48] Epoch [12/20], Step [700/1618], Loss: 2.2607, Perplexity: 9.5900, Valid Loss: 2.3639
+[2020-06-04 16:37:03] Epoch [12/20], Step [800/1618], Loss: 2.2075, Perplexity: 9.0925, Valid Loss: 2.4227
+[2020-06-04 16:50:22] Epoch [12/20], Step [900/1618], Loss: 2.2048, Perplexity: 9.0681, Valid Loss: 2.4035
+[2020-06-04 17:03:51] Epoch [12/20], Step [1000/1618], Loss: 2.2469, Perplexity: 9.4584, Valid Loss: 2.4011
+[2020-06-04 17:16:45] Epoch [12/20], Step [1100/1618], Loss: 2.2073, Perplexity: 9.0910, Valid Loss: 2.4242
+[2020-06-04 17:29:47] Epoch [12/20], Step [1200/1618], Loss: 2.2519, Perplexity: 9.5062, Valid Loss: 2.4113
+[2020-06-04 17:42:58] Epoch [12/20], Step [1300/1618], Loss: 2.2241, Perplexity: 9.2455, Valid Loss: 2.3892
+[2020-06-04 17:55:49] Epoch [12/20], Step [1400/1618], Loss: 2.2244, Perplexity: 9.2479, Valid Loss: 2.4017
+[2020-06-04 18:08:43] Epoch [12/20], Step [1500/1618], Loss: 2.2179, Perplexity: 9.1884, Valid Loss: 2.4034
+[2020-06-04 18:21:36] Epoch [12/20], Step [1600/1618], Loss: 2.2830, Perplexity: 9.8061, Valid Loss: 2.3923
+[2020-06-04 18:37:27] Epoch [13/20], Step [100/1618], Loss: 2.2156, Perplexity: 9.1666, Valid Loss: 2.3806
+[2020-06-04 18:51:47] Epoch [13/20], Step [200/1618], Loss: 2.2427, Perplexity: 9.4191, Valid Loss: 2.3730
+[2020-06-04 19:05:49] Epoch [13/20], Step [300/1618], Loss: 2.2502, Perplexity: 9.4895, Valid Loss: 2.4029
+[2020-06-04 19:19:18] Epoch [13/20], Step [400/1618], Loss: 2.2192, Perplexity: 9.2004, Valid Loss: 2.3863
+[2020-06-04 19:32:39] Epoch [13/20], Step [500/1618], Loss: 2.2380, Perplexity: 9.3746, Valid Loss: 2.3630
+[2020-06-04 19:46:45] Epoch [13/20], Step [600/1618], Loss: 2.2282, Perplexity: 9.2835, Valid Loss: 2.4207
+[2020-06-04 20:01:30] Epoch [13/20], Step [700/1618], Loss: 2.1949, Perplexity: 8.9791, Valid Loss: 2.4197
+[2020-06-04 20:16:22] Epoch [13/20], Step [800/1618], Loss: 2.1901, Perplexity: 8.9361, Valid Loss: 2.3818
+[2020-06-04 20:30:52] Epoch [13/20], Step [900/1618], Loss: 2.2249, Perplexity: 9.2523, Valid Loss: 2.4199
+[2020-06-04 20:45:41] Epoch [13/20], Step [1000/1618], Loss: 2.2137, Perplexity: 9.1497, Valid Loss: 2.3873
+[2020-06-04 20:59:48] Epoch [13/20], Step [1100/1618], Loss: 2.1996, Perplexity: 9.0216, Valid Loss: 2.4060
+[2020-06-04 21:14:09] Epoch [13/20], Step [1200/1618], Loss: 2.2112, Perplexity: 9.1270, Valid Loss: 2.4156
+[2020-06-04 21:28:36] Epoch [13/20], Step [1300/1618], Loss: 2.2223, Perplexity: 9.2286, Valid Loss: 2.4041
+[2020-06-04 21:43:32] Epoch [13/20], Step [1400/1618], Loss: 2.1681, Perplexity: 8.7413, Valid Loss: 2.3637
+[2020-06-04 21:58:03] Epoch [13/20], Step [1500/1618], Loss: 2.2081, Perplexity: 9.0982, Valid Loss: 2.4238
+[2020-06-04 22:12:33] Epoch [13/20], Step [1600/1618], Loss: 2.2090, Perplexity: 9.1068, Valid Loss: 2.3967
+[2020-06-04 22:30:25] Epoch [14/20], Step [100/1618], Loss: 2.2181, Perplexity: 9.1900, Valid Loss: 2.4384
+[2020-06-04 22:45:35] Epoch [14/20], Step [200/1618], Loss: 2.2174, Perplexity: 9.1833, Valid Loss: 2.3798
+[2020-06-04 23:00:29] Epoch [14/20], Step [300/1618], Loss: 2.2017, Perplexity: 9.0408, Valid Loss: 2.3954
+[2020-06-04 23:15:04] Epoch [14/20], Step [400/1618], Loss: 2.2177, Perplexity: 9.1864, Valid Loss: 2.3877
+[2020-06-04 23:29:11] Epoch [14/20], Step [500/1618], Loss: 2.1962, Perplexity: 8.9905, Valid Loss: 2.3896
+[2020-06-04 23:43:23] Epoch [14/20], Step [600/1618], Loss: 2.2148, Perplexity: 9.1592, Valid Loss: 2.3742
+[2020-06-04 23:57:40] Epoch [14/20], Step [700/1618], Loss: 2.1856, Perplexity: 8.8959, Valid Loss: 2.3935
+[2020-06-05 00:11:54] Epoch [14/20], Step [800/1618], Loss: 2.1955, Perplexity: 8.9842, Valid Loss: 2.3766
+[2020-06-05 00:26:14] Epoch [14/20], Step [900/1618], Loss: 2.2155, Perplexity: 9.1658, Valid Loss: 2.3662
+[2020-06-05 00:40:42] Epoch [14/20], Step [1000/1618], Loss: 2.2102, Perplexity: 9.1177, Valid Loss: 2.3686
+[2020-06-05 00:55:12] Epoch [14/20], Step [1100/1618], Loss: 2.2214, Perplexity: 9.2203, Valid Loss: 2.3828
+[2020-06-05 01:10:24] Epoch [14/20], Step [1200/1618], Loss: 2.2155, Perplexity: 9.1656, Valid Loss: 2.3781
+[2020-06-05 01:25:02] Epoch [14/20], Step [1300/1618], Loss: 2.2538, Perplexity: 9.5237, Valid Loss: 2.3543
+[2020-06-05 01:40:44] Epoch [14/20], Step [1400/1618], Loss: 2.2191, Perplexity: 9.1989, Valid Loss: 2.3602
+[2020-06-05 01:55:52] Epoch [14/20], Step [1500/1618], Loss: 2.1932, Perplexity: 8.9635, Valid Loss: 2.3683
+[2020-06-05 02:10:47] Epoch [14/20], Step [1600/1618], Loss: 2.2074, Perplexity: 9.0924, Valid Loss: 2.3918
+[2020-06-05 02:28:26] Epoch [15/20], Step [100/1618], Loss: 2.2252, Perplexity: 9.2554, Valid Loss: 2.3698
+[2020-06-05 02:43:29] Epoch [15/20], Step [200/1618], Loss: 2.1932, Perplexity: 8.9637, Valid Loss: 2.4205
+[2020-06-05 02:58:32] Epoch [15/20], Step [300/1618], Loss: 2.2176, Perplexity: 9.1849, Valid Loss: 2.3608
+[2020-06-05 03:13:00] Epoch [15/20], Step [400/1618], Loss: 2.2054, Perplexity: 9.0741, Valid Loss: 2.3874
+[2020-06-05 03:27:00] Epoch [15/20], Step [500/1618], Loss: 2.2307, Perplexity: 9.3067, Valid Loss: 2.3519
+[2020-06-05 03:41:41] Epoch [15/20], Step [600/1618], Loss: 2.1983, Perplexity: 9.0100, Valid Loss: 2.4008
+[2020-06-05 03:56:30] Epoch [15/20], Step [700/1618], Loss: 2.1943, Perplexity: 8.9740, Valid Loss: 2.4313
+[2020-06-05 04:11:08] Epoch [15/20], Step [800/1618], Loss: 2.2211, Perplexity: 9.2170, Valid Loss: 2.3777
+[2020-06-05 04:25:10] Epoch [15/20], Step [900/1618], Loss: 2.2164, Perplexity: 9.1742, Valid Loss: 2.4219
+[2020-06-05 04:39:16] Epoch [15/20], Step [1000/1618], Loss: 2.1803, Perplexity: 8.8485, Valid Loss: 2.3937
+[2020-06-05 04:53:33] Epoch [15/20], Step [1100/1618], Loss: 2.1923, Perplexity: 8.9560, Valid Loss: 2.3683
+[2020-06-05 05:07:30] Epoch [15/20], Step [1200/1618], Loss: 2.1950, Perplexity: 8.9801, Valid Loss: 2.3728
+[2020-06-05 05:21:33] Epoch [15/20], Step [1300/1618], Loss: 2.1883, Perplexity: 8.9200, Valid Loss: 2.3753
+[2020-06-05 05:35:42] Epoch [15/20], Step [1400/1618], Loss: 2.1835, Perplexity: 8.8777, Valid Loss: 2.3908
+[2020-06-05 05:49:22] Epoch [15/20], Step [1500/1618], Loss: 2.1910, Perplexity: 8.9440, Valid Loss: 2.3940
+[2020-06-05 06:03:11] Epoch [15/20], Step [1600/1618], Loss: 2.2078, Perplexity: 9.0958, Valid Loss: 2.4235
+[2020-06-05 06:19:58] Epoch [16/20], Step [100/1618], Loss: 2.1980, Perplexity: 9.0067, Valid Loss: 2.3943
+[2020-06-05 06:34:12] Epoch [16/20], Step [200/1618], Loss: 2.1895, Perplexity: 8.9310, Valid Loss: 2.3774
+[2020-06-05 06:49:02] Epoch [16/20], Step [300/1618], Loss: 2.2163, Perplexity: 9.1730, Valid Loss: 2.3762
+[2020-06-05 07:03:08] Epoch [16/20], Step [400/1618], Loss: 2.1783, Perplexity: 8.8311, Valid Loss: 2.3876
+[2020-06-05 07:17:12] Epoch [16/20], Step [500/1618], Loss: 2.1966, Perplexity: 8.9945, Valid Loss: 2.3650
+[2020-06-05 07:31:51] Epoch [16/20], Step [600/1618], Loss: 2.1828, Perplexity: 8.8711, Valid Loss: 2.3792
+[2020-06-05 07:46:36] Epoch [16/20], Step [700/1618], Loss: 2.2235, Perplexity: 9.2399, Valid Loss: 2.3898
+[2020-06-05 08:01:46] Epoch [16/20], Step [800/1618], Loss: 2.1818, Perplexity: 8.8623, Valid Loss: 2.3832
+[2020-06-05 08:16:39] Epoch [16/20], Step [900/1618], Loss: 2.2084, Perplexity: 9.1016, Valid Loss: 2.4346
+[2020-06-05 08:31:25] Epoch [16/20], Step [1000/1618], Loss: 2.1767, Perplexity: 8.8171, Valid Loss: 2.3751
+[2020-06-05 08:46:05] Epoch [16/20], Step [1100/1618], Loss: 2.1844, Perplexity: 8.8849, Valid Loss: 2.3760
+[2020-06-05 09:00:34] Epoch [16/20], Step [1200/1618], Loss: 2.2230, Perplexity: 9.2349, Valid Loss: 2.3980
+[2020-06-05 09:15:11] Epoch [16/20], Step [1300/1618], Loss: 2.1938, Perplexity: 8.9690, Valid Loss: 2.3966
+[2020-06-05 09:29:47] Epoch [16/20], Step [1400/1618], Loss: 2.1760, Perplexity: 8.8108, Valid Loss: 2.4021
+[2020-06-05 09:44:24] Epoch [16/20], Step [1500/1618], Loss: 2.1671, Perplexity: 8.7330, Valid Loss: 2.4289
+[2020-06-05 09:58:48] Epoch [16/20], Step [1600/1618], Loss: 2.1709, Perplexity: 8.7660, Valid Loss: 2.3695
+[2020-06-05 10:16:27] Epoch [17/20], Step [100/1618], Loss: 2.2012, Perplexity: 9.0356, Valid Loss: 2.3546
+[2020-06-05 10:31:51] Epoch [17/20], Step [200/1618], Loss: 2.2007, Perplexity: 9.0314, Valid Loss: 2.3887
+[2020-06-05 10:47:18] Epoch [17/20], Step [300/1618], Loss: 2.1764, Perplexity: 8.8145, Valid Loss: 2.3698
+[2020-06-05 11:02:16] Epoch [17/20], Step [400/1618], Loss: 2.1863, Perplexity: 8.9019, Valid Loss: 2.3651
+[2020-06-05 11:16:33] Epoch [17/20], Step [500/1618], Loss: 2.1898, Perplexity: 8.9337, Valid Loss: 2.3671
+[2020-06-05 11:30:17] Epoch [17/20], Step [600/1618], Loss: 2.2258, Perplexity: 9.2611, Valid Loss: 2.3802
+[2020-06-05 11:44:12] Epoch [17/20], Step [700/1618], Loss: 2.1936, Perplexity: 8.9678, Valid Loss: 2.3482
+[2020-06-05 11:59:10] Epoch [17/20], Step [800/1618], Loss: 2.1763, Perplexity: 8.8135, Valid Loss: 2.3731
+[2020-06-05 12:13:38] Epoch [17/20], Step [900/1618], Loss: 2.1841, Perplexity: 8.8825, Valid Loss: 2.3999
+[2020-06-05 12:27:20] Epoch [17/20], Step [1000/1618], Loss: 2.1894, Perplexity: 8.9303, Valid Loss: 2.3707
+[2020-06-05 12:40:37] Epoch [17/20], Step [1100/1618], Loss: 2.2172, Perplexity: 9.1812, Valid Loss: 2.3514
+[2020-06-05 12:53:54] Epoch [17/20], Step [1200/1618], Loss: 2.2057, Perplexity: 9.0767, Valid Loss: 2.3551
+[2020-06-05 13:07:14] Epoch [17/20], Step [1300/1618], Loss: 2.1811, Perplexity: 8.8560, Valid Loss: 2.3732
+[2020-06-05 13:20:58] Epoch [17/20], Step [1400/1618], Loss: 2.1546, Perplexity: 8.6240, Valid Loss: 2.3857
+[2020-06-05 13:34:22] Epoch [17/20], Step [1500/1618], Loss: 2.1709, Perplexity: 8.7661, Valid Loss: 2.4031
+[2020-06-05 13:47:29] Epoch [17/20], Step [1600/1618], Loss: 2.1736, Perplexity: 8.7898, Valid Loss: 2.3904
+[2020-06-05 14:03:53] Epoch [18/20], Step [100/1618], Loss: 2.1722, Perplexity: 8.7774, Valid Loss: 2.3990
+[2020-06-05 14:18:45] Epoch [18/20], Step [200/1618], Loss: 2.1559, Perplexity: 8.6360, Valid Loss: 2.3776
+[2020-06-05 14:33:45] Epoch [18/20], Step [300/1618], Loss: 2.1572, Perplexity: 8.6470, Valid Loss: 2.3664
+[2020-06-05 14:47:36] Epoch [18/20], Step [400/1618], Loss: 2.1674, Perplexity: 8.7351, Valid Loss: 2.3623
+[2020-06-05 15:02:03] Epoch [18/20], Step [500/1618], Loss: 2.1132, Perplexity: 8.2746, Valid Loss: 2.4092
+[2020-06-05 15:16:13] Epoch [18/20], Step [600/1618], Loss: 2.2445, Perplexity: 9.4355, Valid Loss: 2.3717
+[2020-06-05 15:30:16] Epoch [18/20], Step [700/1618], Loss: 2.2036, Perplexity: 9.0575, Valid Loss: 2.3911
+[2020-06-05 15:43:58] Epoch [18/20], Step [800/1618], Loss: 2.2213, Perplexity: 9.2194, Valid Loss: 2.4041
+[2020-06-05 15:58:27] Epoch [18/20], Step [900/1618], Loss: 2.1806, Perplexity: 8.8514, Valid Loss: 2.3664
+[2020-06-05 16:12:47] Epoch [18/20], Step [1000/1618], Loss: 2.1876, Perplexity: 8.9134, Valid Loss: 2.3590
+[2020-06-05 16:26:49] Epoch [18/20], Step [1100/1618], Loss: 2.1881, Perplexity: 8.9181, Valid Loss: 2.3703
+[2020-06-05 16:41:15] Epoch [18/20], Step [1200/1618], Loss: 2.1555, Perplexity: 8.6324, Valid Loss: 2.3662
+[2020-06-05 16:55:23] Epoch [18/20], Step [1300/1618], Loss: 2.1813, Perplexity: 8.8576, Valid Loss: 2.3989
+[2020-06-05 17:09:27] Epoch [18/20], Step [1400/1618], Loss: 2.1447, Perplexity: 8.5395, Valid Loss: 2.3793
+[2020-06-05 17:23:20] Epoch [18/20], Step [1500/1618], Loss: 2.1773, Perplexity: 8.8225, Valid Loss: 2.3899
+[2020-06-05 17:37:38] Epoch [18/20], Step [1600/1618], Loss: 2.1777, Perplexity: 8.8259, Valid Loss: 2.3654
+[2020-06-05 17:54:53] Epoch [19/20], Step [100/1618], Loss: 2.1791, Perplexity: 8.8384, Valid Loss: 2.3803
+[2020-06-05 18:09:29] Epoch [19/20], Step [200/1618], Loss: 2.1681, Perplexity: 8.7421, Valid Loss: 2.3897
+[2020-06-05 18:23:22] Epoch [19/20], Step [300/1618], Loss: 2.1416, Perplexity: 8.5133, Valid Loss: 2.4065
+[2020-06-05 18:37:10] Epoch [19/20], Step [400/1618], Loss: 2.1682, Perplexity: 8.7428, Valid Loss: 2.3760
+[2020-06-05 18:51:09] Epoch [19/20], Step [500/1618], Loss: 2.1551, Perplexity: 8.6286, Valid Loss: 2.3882
+[2020-06-05 19:05:24] Epoch [19/20], Step [600/1618], Loss: 2.1738, Perplexity: 8.7919, Valid Loss: 2.3699
+[2020-06-05 19:19:17] Epoch [19/20], Step [700/1618], Loss: 2.1470, Perplexity: 8.5592, Valid Loss: 2.3727
+[2020-06-05 19:33:06] Epoch [19/20], Step [800/1618], Loss: 2.1774, Perplexity: 8.8236, Valid Loss: 2.3566
+[2020-06-05 19:46:54] Epoch [19/20], Step [900/1618], Loss: 2.1545, Perplexity: 8.6236, Valid Loss: 2.3828
+[2020-06-05 20:00:36] Epoch [19/20], Step [1000/1618], Loss: 2.1616, Perplexity: 8.6852, Valid Loss: 2.3778
+[2020-06-05 20:14:45] Epoch [19/20], Step [1100/1618], Loss: 2.1305, Perplexity: 8.4188, Valid Loss: 2.3722
+[2020-06-05 20:28:52] Epoch [19/20], Step [1200/1618], Loss: 2.1466, Perplexity: 8.5558, Valid Loss: 2.3698
+[2020-06-05 20:43:03] Epoch [19/20], Step [1300/1618], Loss: 2.1331, Perplexity: 8.4407, Valid Loss: 2.3724
+[2020-06-05 20:57:02] Epoch [19/20], Step [1400/1618], Loss: 2.1751, Perplexity: 8.8035, Valid Loss: 2.3543
+[2020-06-05 21:11:14] Epoch [19/20], Step [1500/1618], Loss: 2.1854, Perplexity: 8.8944, Valid Loss: 2.3687
+[2020-06-05 21:25:09] Epoch [19/20], Step [1600/1618], Loss: 2.1643, Perplexity: 8.7083, Valid Loss: 2.3616
+[2020-06-05 21:42:33] Epoch [20/20], Step [100/1618], Loss: 2.1879, Perplexity: 8.9168, Valid Loss: 2.3849
+[2020-06-05 21:58:05] Epoch [20/20], Step [200/1618], Loss: 2.1492, Perplexity: 8.5778, Valid Loss: 2.4018
+[2020-06-05 22:13:26] Epoch [20/20], Step [300/1618], Loss: 2.1773, Perplexity: 8.8228, Valid Loss: 2.3645
+[2020-06-05 22:28:15] Epoch [20/20], Step [400/1618], Loss: 2.1590, Perplexity: 8.6624, Valid Loss: 2.3784
+[2020-06-05 22:42:44] Epoch [20/20], Step [500/1618], Loss: 2.1621, Perplexity: 8.6894, Valid Loss: 2.3480
+[2020-06-05 22:57:36] Epoch [20/20], Step [600/1618], Loss: 2.1580, Perplexity: 8.6535, Valid Loss: 2.4075
+[2020-06-05 23:12:17] Epoch [20/20], Step [700/1618], Loss: 2.1862, Perplexity: 8.9011, Valid Loss: 2.3614
+[2020-06-05 23:26:59] Epoch [20/20], Step [800/1618], Loss: 2.1453, Perplexity: 8.5450, Valid Loss: 2.3638
+[2020-06-05 23:41:57] Epoch [20/20], Step [900/1618], Loss: 2.1691, Perplexity: 8.7501, Valid Loss: 2.3794
+[2020-06-05 23:56:30] Epoch [20/20], Step [1000/1618], Loss: 2.1750, Perplexity: 8.8019, Valid Loss: 2.3924
+[2020-06-06 00:10:37] Epoch [20/20], Step [1100/1618], Loss: 2.1739, Perplexity: 8.7921, Valid Loss: 2.3705
+[2020-06-06 00:24:45] Epoch [20/20], Step [1200/1618], Loss: 2.1634, Perplexity: 8.7004, Valid Loss: 2.3926
+[2020-06-06 00:38:58] Epoch [20/20], Step [1300/1618], Loss: 2.1633, Perplexity: 8.7000, Valid Loss: 2.3722
+[2020-06-06 00:52:59] Epoch [20/20], Step [1400/1618], Loss: 2.1608, Perplexity: 8.6781, Valid Loss: 2.3758
+[2020-06-06 01:07:03] Epoch [20/20], Step [1500/1618], Loss: 2.1683, Perplexity: 8.7434, Valid Loss: 2.3632
+[2020-06-06 01:21:28] Epoch [20/20], Step [1600/1618], Loss: 2.1462, Perplexity: 8.5519, Valid Loss: 2.3882
+[2020-06-06 16:03:10] Epoch [21/25], Step [100/1618], Loss: 2.1424, Perplexity: 8.5195, Valid Loss: 2.2964
+[2020-06-06 16:23:45] Epoch [21/25], Step [200/1618], Loss: 2.1725, Perplexity: 8.7803, Valid Loss: 2.3142
+[2020-06-06 16:41:08] Epoch [21/25], Step [300/1618], Loss: 2.1755, Perplexity: 8.8062, Valid Loss: 2.4108
+[2020-06-06 16:58:07] Epoch [21/25], Step [400/1618], Loss: 2.1618, Perplexity: 8.6869, Valid Loss: 2.2078
+[2020-06-06 17:15:10] Epoch [21/25], Step [500/1618], Loss: 2.1613, Perplexity: 8.6828, Valid Loss: 2.2579
+[2020-06-06 17:32:12] Epoch [21/25], Step [600/1618], Loss: 2.1227, Perplexity: 8.3535, Valid Loss: 2.2539
+[2020-06-06 17:49:30] Epoch [21/25], Step [700/1618], Loss: 2.1336, Perplexity: 8.4450, Valid Loss: 2.2955
+[2020-06-06 18:06:17] Epoch [21/25], Step [800/1618], Loss: 2.1560, Perplexity: 8.6364, Valid Loss: 2.2637
+[2020-06-06 18:21:59] Epoch [21/25], Step [900/1618], Loss: 2.1685, Perplexity: 8.7452, Valid Loss: 2.2508
+[2020-06-06 18:37:50] Epoch [21/25], Step [1000/1618], Loss: 2.1808, Perplexity: 8.8535, Valid Loss: 2.2728
+[2020-06-06 18:53:24] Epoch [21/25], Step [1100/1618], Loss: 2.1866, Perplexity: 8.9045, Valid Loss: 2.3599
+[2020-06-06 19:09:01] Epoch [21/25], Step [1200/1618], Loss: 2.1849, Perplexity: 8.8902, Valid Loss: 2.1828
+[2020-06-06 19:25:16] Epoch [21/25], Step [1300/1618], Loss: 2.1447, Perplexity: 8.5399, Valid Loss: 2.6217
+[2020-06-06 19:41:32] Epoch [21/25], Step [1400/1618], Loss: 2.2247, Perplexity: 9.2503, Valid Loss: 2.2885
+[2020-06-06 19:58:10] Epoch [21/25], Step [1500/1618], Loss: 2.1714, Perplexity: 8.7702, Valid Loss: 2.2408
+[2020-06-06 20:14:05] Epoch [21/25], Step [1600/1618], Loss: 2.1695, Perplexity: 8.7537, Valid Loss: 2.3234
+[2020-06-06 20:34:19] Epoch [22/25], Step [100/1618], Loss: 2.1642, Perplexity: 8.7078, Valid Loss: 2.2084
+[2020-06-06 20:50:52] Epoch [22/25], Step [200/1618], Loss: 2.1352, Perplexity: 8.4584, Valid Loss: 2.1489
+[2020-06-06 21:07:24] Epoch [22/25], Step [300/1618], Loss: 2.1477, Perplexity: 8.5652, Valid Loss: 2.3135
+[2020-06-06 21:23:17] Epoch [22/25], Step [400/1618], Loss: 2.1575, Perplexity: 8.6499, Valid Loss: 2.2732
+[2020-06-06 21:38:51] Epoch [22/25], Step [500/1618], Loss: 2.1710, Perplexity: 8.7671, Valid Loss: 3.0250
+[2020-06-06 21:54:22] Epoch [22/25], Step [600/1618], Loss: 2.1558, Perplexity: 8.6347, Valid Loss: 2.2799
+[2020-06-06 22:09:54] Epoch [22/25], Step [700/1618], Loss: 2.1274, Perplexity: 8.3932, Valid Loss: 2.2303
+[2020-06-06 22:25:04] Epoch [22/25], Step [800/1618], Loss: 2.1633, Perplexity: 8.6999, Valid Loss: 2.2173
+[2020-06-06 22:40:14] Epoch [22/25], Step [900/1618], Loss: 2.1610, Perplexity: 8.6795, Valid Loss: 2.1431
+[2020-06-06 22:55:37] Epoch [22/25], Step [1000/1618], Loss: 2.1575, Perplexity: 8.6493, Valid Loss: 2.3015
+[2020-06-06 23:10:26] Epoch [22/25], Step [1100/1618], Loss: 2.1356, Perplexity: 8.4620, Valid Loss: 2.2268
+[2020-06-06 23:25:26] Epoch [22/25], Step [1200/1618], Loss: 2.1406, Perplexity: 8.5043, Valid Loss: 2.1847
+[2020-06-06 23:40:22] Epoch [22/25], Step [1300/1618], Loss: 2.1490, Perplexity: 8.5762, Valid Loss: 2.2777
+[2020-06-06 23:54:54] Epoch [22/25], Step [1400/1618], Loss: 2.1680, Perplexity: 8.7409, Valid Loss: 2.2548
+[2020-06-07 00:08:35] Epoch [22/25], Step [1500/1618], Loss: 2.1707, Perplexity: 8.7642, Valid Loss: 2.1616
+[2020-06-07 00:22:27] Epoch [22/25], Step [1600/1618], Loss: 2.1818, Perplexity: 8.8621, Valid Loss: 2.2131
+[2020-06-07 00:39:19] Epoch [23/25], Step [100/1618], Loss: 2.1520, Perplexity: 8.6017, Valid Loss: 2.3158
+[2020-06-07 00:53:39] Epoch [23/25], Step [200/1618], Loss: 2.1686, Perplexity: 8.7464, Valid Loss: 2.5202
+[2020-06-07 01:07:51] Epoch [23/25], Step [300/1618], Loss: 2.1536, Perplexity: 8.6160, Valid Loss: 2.3060
+[2020-06-07 01:22:05] Epoch [23/25], Step [400/1618], Loss: 2.1576, Perplexity: 8.6502, Valid Loss: 2.1884
+[2020-06-07 01:36:13] Epoch [23/25], Step [500/1618], Loss: 2.1395, Perplexity: 8.4950, Valid Loss: 2.2285
+[2020-06-07 01:49:58] Epoch [23/25], Step [600/1618], Loss: 2.1299, Perplexity: 8.4140, Valid Loss: 2.2403
+[2020-06-07 02:03:37] Epoch [23/25], Step [700/1618], Loss: 2.1477, Perplexity: 8.5650, Valid Loss: 2.2702
+[2020-06-07 02:17:18] Epoch [23/25], Step [800/1618], Loss: 2.1700, Perplexity: 8.7581, Valid Loss: 2.2009
+[2020-06-07 02:31:07] Epoch [23/25], Step [900/1618], Loss: 2.1383, Perplexity: 8.4850, Valid Loss: 2.9383
+[2020-06-07 02:44:57] Epoch [23/25], Step [1000/1618], Loss: 2.1667, Perplexity: 8.7294, Valid Loss: 3.2387
+[2020-06-07 02:58:43] Epoch [23/25], Step [1100/1618], Loss: 2.1213, Perplexity: 8.3416, Valid Loss: 2.2886
+[2020-06-07 03:12:41] Epoch [23/25], Step [1200/1618], Loss: 2.1937, Perplexity: 8.9685, Valid Loss: 2.2176
+[2020-06-07 03:26:23] Epoch [23/25], Step [1300/1618], Loss: 2.1671, Perplexity: 8.7328, Valid Loss: 3.1061
+[2020-06-07 03:40:15] Epoch [23/25], Step [1400/1618], Loss: 2.1695, Perplexity: 8.7539, Valid Loss: 2.2396
+[2020-06-07 03:54:34] Epoch [23/25], Step [1500/1618], Loss: 2.1466, Perplexity: 8.5553, Valid Loss: 2.4588
+[2020-06-07 04:08:43] Epoch [23/25], Step [1600/1618], Loss: 2.1600, Perplexity: 8.6714, Valid Loss: 2.1493
+[2020-06-07 04:25:34] Epoch [24/25], Step [100/1618], Loss: 2.1804, Perplexity: 8.8499, Valid Loss: 2.8957
+[2020-06-07 04:39:23] Epoch [24/25], Step [200/1618], Loss: 2.1253, Perplexity: 8.3756, Valid Loss: 2.2978
+[2020-06-07 04:53:04] Epoch [24/25], Step [300/1618], Loss: 2.1538, Perplexity: 8.6171, Valid Loss: 2.6588
+[2020-06-07 05:06:32] Epoch [24/25], Step [400/1618], Loss: 2.1818, Perplexity: 8.8623, Valid Loss: 2.2772
+[2020-06-07 05:20:12] Epoch [24/25], Step [500/1618], Loss: 2.1463, Perplexity: 8.5529, Valid Loss: 2.2946
+[2020-06-07 05:33:43] Epoch [24/25], Step [600/1618], Loss: 2.1254, Perplexity: 8.3763, Valid Loss: 2.2422
+[2020-06-07 05:47:06] Epoch [24/25], Step [700/1618], Loss: 2.1490, Perplexity: 8.5766, Valid Loss: 2.1073
+[2020-06-07 06:01:06] Epoch [24/25], Step [800/1618], Loss: 2.1236, Perplexity: 8.3610, Valid Loss: 2.5788
+[2020-06-07 06:14:26] Epoch [24/25], Step [900/1618], Loss: 2.1480, Perplexity: 8.5677, Valid Loss: 2.1899
+[2020-06-07 06:27:42] Epoch [24/25], Step [1000/1618], Loss: 2.1599, Perplexity: 8.6704, Valid Loss: 2.3056
+[2020-06-07 06:41:22] Epoch [24/25], Step [1100/1618], Loss: 2.1508, Perplexity: 8.5917, Valid Loss: 2.4721
+[2020-06-07 06:55:25] Epoch [24/25], Step [1200/1618], Loss: 2.1551, Perplexity: 8.6288, Valid Loss: 2.2204
+[2020-06-07 07:09:05] Epoch [24/25], Step [1300/1618], Loss: 2.1754, Perplexity: 8.8054, Valid Loss: 2.5720
+[2020-06-07 07:22:25] Epoch [24/25], Step [1400/1618], Loss: 2.1203, Perplexity: 8.3337, Valid Loss: 2.2010
+[2020-06-07 07:35:30] Epoch [24/25], Step [1500/1618], Loss: 2.1617, Perplexity: 8.6861, Valid Loss: 2.2282
+[2020-06-07 07:48:45] Epoch [24/25], Step [1600/1618], Loss: 2.1197, Perplexity: 8.3282, Valid Loss: 2.1947
+[2020-06-07 08:05:02] Epoch [25/25], Step [100/1618], Loss: 2.0968, Perplexity: 8.1402, Valid Loss: 2.2493
+[2020-06-07 08:18:11] Epoch [25/25], Step [200/1618], Loss: 2.1680, Perplexity: 8.7410, Valid Loss: 2.2513
+[2020-06-07 08:31:31] Epoch [25/25], Step [300/1618], Loss: 2.1525, Perplexity: 8.6063, Valid Loss: 2.4052
+[2020-06-07 08:44:49] Epoch [25/25], Step [400/1618], Loss: 2.2284, Perplexity: 9.2850, Valid Loss: 2.2329
+[2020-06-07 08:58:03] Epoch [25/25], Step [500/1618], Loss: 2.1433, Perplexity: 8.5278, Valid Loss: 2.2081
+[2020-06-07 09:11:26] Epoch [25/25], Step [600/1618], Loss: 2.1565, Perplexity: 8.6410, Valid Loss: 2.3363
+[2020-06-07 09:25:54] Epoch [25/25], Step [700/1618], Loss: 2.1185, Perplexity: 8.3185, Valid Loss: 2.6236
+[2020-06-07 09:40:18] Epoch [25/25], Step [800/1618], Loss: 2.1747, Perplexity: 8.7992, Valid Loss: 2.7920
+[2020-06-07 09:54:35] Epoch [25/25], Step [900/1618], Loss: 2.1158, Perplexity: 8.2961, Valid Loss: 2.1982
+[2020-06-07 10:08:59] Epoch [25/25], Step [1000/1618], Loss: 2.1329, Perplexity: 8.4395, Valid Loss: 2.1955
+[2020-06-07 10:23:36] Epoch [25/25], Step [1100/1618], Loss: 2.1417, Perplexity: 8.5138, Valid Loss: 2.3065
+[2020-06-07 10:37:47] Epoch [25/25], Step [1200/1618], Loss: 2.1441, Perplexity: 8.5347, Valid Loss: 2.3213
+[2020-06-07 10:52:25] Epoch [25/25], Step [1300/1618], Loss: 2.1204, Perplexity: 8.3345, Valid Loss: 2.2321
+[2020-06-07 11:06:57] Epoch [25/25], Step [1400/1618], Loss: 2.1339, Perplexity: 8.4480, Valid Loss: 2.2238
+[2020-06-07 11:21:25] Epoch [25/25], Step [1500/1618], Loss: 2.1528, Perplexity: 8.6087, Valid Loss: 2.2193
+[2020-06-07 11:35:49] Epoch [25/25], Step [1600/1618], Loss: 2.1362, Perplexity: 8.4673, Valid Loss: 2.2418

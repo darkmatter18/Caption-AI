@@ -35,7 +35,7 @@ def get_loader(transform,
       num_workers: Number of subprocesses to use for data loading 
     """
     
-    assert mode in ['train', 'test', 'val'], "mode must be one of 'train' or 'test'."
+    assert mode in ['train', 'test', 'val', 'val_e'], "mode must be one of 'train' or 'test'."
     if vocab_from_file==False: assert mode=='train', "To generate vocab from captions file, must be in training mode (mode='train')."
     
     cocoapi_loc =  os.path.join(os.getcwd(), 'COCODataset')
@@ -47,7 +47,7 @@ def get_loader(transform,
         img_folder = os.path.join(cocoapi_loc, 'images', 'train2014')
         annotations_file = os.path.join(cocoapi_loc, 'annotations', 'captions_train2014.json')
         
-    if mode == 'val':
+    if mode == 'val' or mode == 'val_e':
         if vocab_from_file==True: assert os.path.exists(vocab_file), "vocab_file does not exist. Change vocab_from_file to False to create vocab_file."
         img_folder = os.path.join(cocoapi_loc, 'images', 'val2014')
         annotations_file = os.path.join(cocoapi_loc, 'annotations', 'captions_val2014.json')
@@ -86,7 +86,7 @@ def get_loader(transform,
                                       batch_sampler=data.sampler.BatchSampler(sampler=initial_sampler,
                                                                               batch_size=dataset.batch_size,
                                                                               drop_last=False))
-    elif mode == 'val':
+    elif mode == 'val' or mode == 'val_e':
         # Randomly sample a caption length, and sample indices with that length.
         indices = dataset.get_train_indices()
         # Create and assign a batch sampler to retrieve a batch with the sampled indices.
@@ -116,7 +116,7 @@ class CoCoDataset(data.Dataset):
         self.vocab = Vocabulary(vocab_threshold, vocab_file, start_word, end_word, unk_word, annotations_file, vocab_from_file)
         
         self.img_folder = img_folder
-        if self.mode == 'train' or self.mode == 'val':
+        if self.mode == 'train' or self.mode == 'val' or mode == 'val_e':
             self.coco = COCO(annotations_file)
             self.ids = list(self.coco.anns.keys())
             print('Obtaining caption lengths...')
@@ -173,6 +173,31 @@ class CoCoDataset(data.Dataset):
 
             # return pre-processed image and caption tensors
             return image, caption
+        
+                # obtain image and caption if in val mode
+        if self.mode == 'val_e':
+            ann_id = self.ids[index]
+            # caption = self.coco.anns[ann_id]['caption']
+            img_id = self.coco.anns[ann_id]['image_id']
+            path = self.coco.loadImgs(img_id)[0]['file_name']
+
+            # Convert image to tensor and pre-process using transform
+            image = Image.open(os.path.join(self.img_folder, path)).convert('RGB')
+            image = self.transform(image)
+            
+            # Get all captions
+            annIds = self.coco.getAnnIds(imgIds=img_id)
+            anns = self.coco.loadAnns(annIds)
+            anns = [ x['caption'] for x in anns]
+            
+            # Convert caption to tensor of word ids.
+            cx =[]
+            for ann in anns:
+                tokens = nltk.tokenize.word_tokenize(str(ann).lower())
+                cx.append(tokens)
+
+            # return pre-processed image and caption tensors
+            return (image, cx)
 
         # obtain image if in test mode
         else:
