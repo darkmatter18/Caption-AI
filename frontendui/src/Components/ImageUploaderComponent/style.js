@@ -7,8 +7,8 @@ export const useStyles = makeStyles((theme) => ({
         padding: '20px',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center',
         flexDirection: 'column',
+        height: '23rem'
     },
     errorsContainer: {
         maxWidth: 300,
@@ -16,20 +16,12 @@ export const useStyles = makeStyles((theme) => ({
         color: theme.palette.error.main,
         textAlign: 'left'
     },
-    uploadPicturesWrapper: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-    },
     uploadPictureContainer: {
-        width: '65%',
         background: '#edf2f6',
-        display: 'flex',
-        alignItems: 'center',
+        height: '20rem',
+        width: '20rem',
         justifyContent: 'center',
-        height: '75%',
         boxShadow: '0 0 8px 2px rgba(0, 0, 0, 0.1)',
-        position: 'relative'
     },
     deleteImage: {
         position: 'absolute',

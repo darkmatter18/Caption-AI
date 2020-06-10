@@ -21,11 +21,19 @@ const ImageUploaderComponent = (props) => {
     const [dataURL, setdataURL] = useState(null);
     const [file, setfile] = useState(null);
 
+    /**
+     * Check for the Extension for the file and Matches with IMGEXTENSIONS
+     * @param {string} fileName The name of the file
+     * @returns {boolean} If match found
+     */
     const hasExtension = (fileName) => {
         const pattern = '(' + IMGEXTENSIONS.join('|').replace(/\./g, '\\.') + ')$';
         return new RegExp(pattern, 'i').test(fileName);
     }
 
+    /**
+     * Render FIle inputting Errors
+     */
     const renderErrors = () => {
         if (fileError) {
             return (
@@ -34,6 +42,11 @@ const ImageUploaderComponent = (props) => {
         }
     }
 
+    /**
+     * Reads the file
+     * @param {file} file The file
+     * @returns {Promise} the dataURL of the file
+     */
     const readFile = (file) => {
         return new Promise((resolve, reject) => {
             const reader = new FileReader();
@@ -50,10 +63,17 @@ const ImageUploaderComponent = (props) => {
         });
     }
 
+    /**
+     * Fuction invoked by the UPLOAD button
+     */
     const triggerFileUpload = () => {
         inputElement.click();
     }
 
+    /**
+     * on file Drop the Function is invoked
+     * @param {Event} e 
+     */
     const onDropFile = (e) => {
         const file = e.target.files[0];
 
@@ -87,31 +107,38 @@ const ImageUploaderComponent = (props) => {
         props.onChange(file);
     }
 
+    /**
+     * Renders the preview image
+     */
     const renderPreview = () => {
         if (file) {
             return (
-                <div className={classes.uploadPicturesWrapper}>
+                <div >
                     <div className={classes.uploadPictureContainer}>
                         <Close className={classes.deleteImage} onClick={() => removeImage()} />
-                        <img src={dataURL} style={{ width: '100%' }} alt="preview" />
+                        <img src={dataURL} style={{ width: '100%', height: '100%' }} alt="preview" />
                     </div>
                 </div>
             )
         }
     }
 
+    /**
+     * Remove the Image file
+     */
     const removeImage = () => {
         setfile(null);
         setdataURL(null);
 
         props.onChange(null);
     }
-
+    
     return (
         <React.Fragment>
             <div className={classes.fileContainer}>
                 {!file ? (
                     <React.Fragment>
+
                         <img src={UploadIcon} className="uploadIcon" alt="Upload Icon" />
                         <Typography variant="body2">Max file size: 5mb</Typography>
                         <div className={classes.errorsContainer}>
@@ -127,6 +154,7 @@ const ImageUploaderComponent = (props) => {
                             onChange={onDropFile}
                             accept={ACCEPT}
                         />
+
                     </React.Fragment>
                 ) : renderPreview()}
             </div>
