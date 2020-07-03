@@ -19,7 +19,7 @@ async def analyser(request):
         _f = await request.form()
         _fileData = await _f['file'].read()
         image_bytes = BytesIO(_fileData)
-        res = app.state.CAPTIONER.predict(Image.open(image_bytes))
+        res = app.state.CAPTIONER.predict(Image.open(image_bytes).convert('RGB'))
         return JSONResponse({'res': res})
     except IndexError:
         return JSONResponse({e: "No Data Found"}, 500)
