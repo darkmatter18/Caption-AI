@@ -133,7 +133,7 @@ const HomeComponent = () => {
         <React.Fragment>
             <Container className={classes.container}>
                 <Grid container alignItems="center">
-                    <Grid item xs={12} sm={12} md={6}>
+                    <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
                         <Container>
                             <Card className={classes.innerLeftContainer}>
                                 <CardContent>
@@ -144,7 +144,7 @@ const HomeComponent = () => {
                             </Card>
                         </Container>
                     </Grid>
-                    <Grid item xs={12} sm={12} md={6}>
+                    <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
                         <Container>
                             <Card className={classes.innerRightContainer}>
                                 <CardContent>

@@ -5,18 +5,15 @@ import Routes from './routes';
 import HeaderComponent from './Components/HeaderComponent';
 import {blue, pink} from '@material-ui/core/colors';
 import {makeStyles} from "@material-ui/core/styles";
+import Link from "@material-ui/core/Link";
 
 const theme = createMuiTheme({
     palette: {
         primary: {
             main: blue.A400,
-            light: blue.A100,
-            dark: blue.A700
         },
         secondary: {
             main: pink[500],
-            light: pink[300],
-            dark: pink[800]
         }
     }
 })
@@ -25,8 +22,13 @@ const useStyles = makeStyles((theme) => ({
     background: {
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh',
-        backgroundImage: `url(${process.env.PUBLIC_URL}/SubtlePrism.svg)`
+        backgroundImage: `url(${process.env.PUBLIC_URL}/SubtlePrism.svg)`,
+        [theme.breakpoints.down('sm')]: {
+            minHeight: '120vh',
+        },
+        [theme.breakpoints.up('sm')]: {
+            minHeight: '100vh',
+        },
     },
     footer: {
         padding: theme.spacing(3, 2),
@@ -47,7 +49,15 @@ const App = () => {
                     <Routes/>
                     <footer className={classes.footer}>
                         <Container maxWidth="sm">
-                            <Typography variant="body1">My sticky footer can be found here.</Typography>
+                            <Typography variant={"body1"}>Caption-AI</Typography>
+                            <Typography variant="body1">
+                                {'Copyright © '}
+                                <Link color="inherit" href="https://www.arkadip.co">
+                                Arkadip
+                                </Link>{' '}
+                                {new Date().getFullYear()}
+                                {'.'}
+                            </Typography>
                         </Container>
                     </footer>
                 </div>
