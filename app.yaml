@@ -1,8 +1,6 @@
 runtime: python37
 entrypoint: gunicorn -k uvicorn.workers.UvicornWorker -b :$PORT --chdir ./WebBackendEngine server:app
 
-instance_class: F4
-
 handlers:
   - url: /.*
     script: auto
