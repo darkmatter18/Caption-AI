@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
-import { Container, makeStyles, Grid, Card, CardContent, Button, LinearProgress, Typography } from '@material-ui/core';
+import {useHistory} from 'react-router-dom';
+import {Container, makeStyles, Grid, Card, CardContent, Button, LinearProgress, Typography} from '@material-ui/core';
 import ImageUploaderComponent from '../ImageUploaderComponent';
 
 
@@ -41,8 +41,7 @@ const HomeComponent = () => {
     const uploadApi = async (data) => {
         if (file === null) {
             alert("Select a file before Submitting");
-        }
-        else {
+        } else {
             try {
                 setnetworkState(NETWORK_STATE.UPLOADING);
                 const res = await axios.post('/api/analyze', data, {
@@ -58,7 +57,7 @@ const HomeComponent = () => {
                     },
                     cancelToken: source.token
                 });
-                history.push('/result', { res: res.data, file: { file } });
+                history.push('/result', {res: res.data, file: {file}});
             } catch (e) {
                 console.log("Error on Network!!");
                 console.log(e);
@@ -88,11 +87,11 @@ const HomeComponent = () => {
                 <Grid container alignItems="center">
                     <Grid item xs={12} sm={12} md={4}>
                         <Typography variant="caption">
-                            Uploading...  {`${progress}%`}
+                            Uploading... {`${progress}%`}
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={12} md={8}>
-                        <LinearProgress variant="determinate" value={progress} />
+                        <LinearProgress variant="determinate" value={progress}/>
                     </Grid>
                 </Grid>
             )
@@ -106,7 +105,7 @@ const HomeComponent = () => {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={12} md={8}>
-                        <LinearProgress />
+                        <LinearProgress/>
                     </Grid>
                 </Grid>
             )
@@ -116,16 +115,18 @@ const HomeComponent = () => {
     const renderSubmitButton = () => {
         if (networkState === NETWORK_STATE.AVAILABLE) {
             return <Button variant="contained" size="large" color="primary" onClick={upload}>Make Caption</Button>
-        }
-        else if (networkState === NETWORK_STATE.UPLOADING) {
+        } else if (networkState === NETWORK_STATE.UPLOADING) {
             return (
-                <Button variant="contained" color="secondary" size="large" onClick={() => { source.cancel("Operation cancelled by User") }}>
+                <Button variant="contained" color="secondary" size="large" onClick={() => {
+                    source.cancel("Operation cancelled by User")
+                }}>
                     Cancel
                 </Button>
             )
-        }
-        else if (networkState === NETWORK_STATE.ANALYSING) {
-            return <Button variant="contained" color="secondary" size="large" onClick={() => { source.cancel("Operation cancelled by User") }}>Cancel</Button>
+        } else if (networkState === NETWORK_STATE.ANALYSING) {
+            return <Button variant="contained" color="secondary" size="large" onClick={() => {
+                source.cancel("Operation cancelled by User")
+            }}>Cancel</Button>
         }
     }
     return (
@@ -137,7 +138,7 @@ const HomeComponent = () => {
                             <Card className={classes.innerLeftContainer}>
                                 <CardContent>
                                     <form>
-                                        <ImageUploaderComponent onChange={onChange} />
+                                        <ImageUploaderComponent onChange={onChange}/>
                                     </form>
                                 </CardContent>
                             </Card>
