@@ -6,7 +6,7 @@
             <stop offset='0' stop-color='#ebebeb'/>
             <stop offset='1' stop-color='#ffffff'/>
         </linearGradient>
-        <pattern id='b' width='1133' height='944.2' x='0' y='0' viewBox='0 0 1080 900'>
+        <pattern patternUnits='userSpaceOnUse' id='b' width='1133' height='944.2' x='0' y='0' viewBox='0 0 1080 900'>
             <g fill-opacity='0.03'>
                 <polygon fill='#444' points='90 150 0 300 180 300'/>
                 <polygon points='90 150 180 0 0 0'/>
