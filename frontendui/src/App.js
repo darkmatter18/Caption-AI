@@ -9,6 +9,7 @@ import Link from "@material-ui/core/Link";
 import {InfoOutlined} from "@material-ui/icons";
 import IconButton from "@material-ui/core/IconButton";
 import Grid from "@material-ui/core/Grid";
+import {useHistory} from 'react-router-dom'
 
 const theme = createMuiTheme({
     palette: {
@@ -43,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
 
 const App = () => {
     const classes = useStyles()
+    const history = useHistory()
     return (
         <React.Fragment>
             <ThemeProvider theme={theme}>
@@ -66,7 +68,9 @@ const App = () => {
                                 </Grid>
                                 <Grid item xl={4} lg={4} sm={4} md={4} xs={4}>
                                     <Typography component={"div"} align={"right"}>
-                                        <IconButton>
+                                        <IconButton onClick={() => {
+                                            history.push('/about')
+                                        }}>
                                             <InfoOutlined/>
                                         </IconButton>
                                     </Typography>
