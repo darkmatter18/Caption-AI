@@ -2,8 +2,12 @@
   <dictionary name="in2ar">
     <words>
       <w>arkadip</w>
+      <w>asgi</w>
+      <w>bhattacharya</w>
       <w>captioner</w>
+      <w>darkmatter</w>
       <w>lstm</w>
+      <w>starlette</w>
     </words>
   </dictionary>
 </component>
