@@ -21,7 +21,6 @@ from PIL import Image
 from pycocotools.coco import COCO
 import numpy as np
 from tqdm import tqdm
-import random
 import json
 
 def get_loader(transform,
