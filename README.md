@@ -1,6 +1,10 @@
 <h1 align="center">Caption-AI</h1>
 
 <p align="center">
+  An AI powered website, that can Caption any Image
+</p>
+
+<p align="center">
   <a href="https://github.com/darkmatter18/Caption-AI/actions?query=workflow%3A%22GAE+Deploy%22">
     <img src="https://github.com/darkmatter18/Caption-AI/workflows/GAE%20Deploy/badge.svg" alt="GAE Deploy">
   </a>
@@ -20,4 +24,8 @@
   <a href="https://lgtm.com/projects/g/darkmatter18/Caption-AI/context:python">
     <img src="https://img.shields.io/lgtm/grade/python/g/darkmatter18/Caption-AI.svg?logo=lgtm&logoWidth=18" alt="Language grade: Python">
   </a>
+</p>
+
+<p align="center">
+  <img src="https://github.com/darkmatter18/Caption-AI/blob/development/video.gif" alt="Video"/>
 </p>
