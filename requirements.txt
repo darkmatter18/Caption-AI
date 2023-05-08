@@ -1,6 +1,6 @@
 starlette==0.26.1
 torch==2.0.0
-torchvision==0.15.1
+torchvision==0.15.2
 Pillow==9.5.0
 aiofiles==23.1.0
 python-multipart==0.0.6
