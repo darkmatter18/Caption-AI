@@ -1,4 +1,4 @@
-starlette==0.26.1
+starlette==0.30.0
 torch==2.0.0
 torchvision==0.15.1
 Pillow==9.5.0
