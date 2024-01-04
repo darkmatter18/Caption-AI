@@ -1,7 +1,7 @@
 starlette==0.32.0.post1
 torch==2.1.1
 torchvision==0.16.1
-Pillow==10.1.0
+Pillow==10.2.0
 aiofiles==23.2.1
 python-multipart==0.0.6
 uvicorn==0.24.0.post1
