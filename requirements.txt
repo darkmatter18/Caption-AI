@@ -3,6 +3,6 @@ torch==2.1.2
 torchvision==0.16.2
 Pillow==10.2.0
 aiofiles==23.2.1
-python-multipart==0.0.6
+python-multipart==0.0.9
 uvicorn==0.26.0
 gunicorn==21.2.0
