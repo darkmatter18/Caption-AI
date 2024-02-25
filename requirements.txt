@@ -1,5 +1,5 @@
 starlette==0.37.1
-torch==2.2.0
+torch==2.2.1
 torchvision==0.16.2
 Pillow==10.2.0
 aiofiles==23.2.1
