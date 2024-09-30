@@ -4,5 +4,5 @@ torchvision==0.19.1
 Pillow==10.4.0
 aiofiles==24.1.0
 python-multipart==0.0.9
-uvicorn==0.30.5
+uvicorn==0.31.0
 gunicorn==22.0.0
